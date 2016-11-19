@@ -29,22 +29,27 @@ footer {
   display: flex;
   width: 100vw;
   height: 100vh;
+  border: 8px solid blue;
 }
 .colflexnorm{
   display: flex;
   flex: 1;
+  border: 5px solid red;
 }
 .colflextiny{
   display: flex;
   flex: 0.5;
+  background-color: green;
 }
 .colflexmedium{
   display: flex;
   flex: 2;
+  background-color: purple;
 }
 .colflexbig{
   display: flex;
   flex: 4;
+  background-color: yellow;
 }
 /*Fin Grid*/
 
