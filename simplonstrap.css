@@ -24,3 +24,35 @@
   box-sizing: border-box;
 }
 /*Fin Grid*/
+
+/*Positions*/
+.pofixup{
+  position: fixed;
+  top: 0;
+}
+.pofixdown{
+  position: fixed;
+  bottom: 0;
+}
+
+.poabsdl{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.poabsdr{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.poabsul{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.poabsur{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*Fin Positions*/

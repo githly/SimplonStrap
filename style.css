@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* General Styles */
@@ -27,6 +28,59 @@ footer {
 }
 
 /* Navigation Bar */
+
+
+/* Positions */
+.pofixup{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.pofixdown{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+
+}
+
+.poabsdl{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.poabsdr{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.poabsul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.poabsur{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+
 
 /* Grid */
 .taillerandom{
