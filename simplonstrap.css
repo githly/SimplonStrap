@@ -104,11 +104,67 @@ img {
 
 header {}
 
-nav {
+
+/** NAV BAR Instructions
+    * The text will be transformed in Uppercase and aligned center,
+    * There'll be 3 sizes to choosefrom,
+    * Display flex for the direction of the nav (horizontal or vertical)
+
+    $ Made by @ryderblack
+   */
+
+
+/* Horizontal nav bar with 3 sizes */
+
+.nav-landscape-L {
     text-align: center;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+
+.nav-landscape-M {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.nav-landscape-S {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+
+/** Horizontal nav bar with 3 sizes */
+
+.nav-portrait-L {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-portrait-M {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.nav-portrait-S {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
 
 main {}
@@ -165,58 +221,6 @@ ul {
 ol {}
 
 
-/* Width of the content in the navbar */
-
-.li-larg33 {
-    width: 33%;
-}
-
-.li-larg25 {
-    width: 25%;
-}
-
-.li-larg15 {
-    width: 15%;
-}
-
-/* Height of the content in the navbar */
-
-.li-high150 {
-    height: 150px;
-}
-
-.li-high100 {
-    height: 100px;
-}
-
-.li-high50 {
-    height: 50px;
-}
-
-.li-high25 {
-    height: 25px;
-}
-
-
-/* Border Radius of the navbar */
-
-.nav-brder-rad25 {
-    border-radius: 25px;
-}
-
-.nav-brder-rad10 {
-    border-radius: 10px;
-}
-
-.nav-brder-rad5 {
-    border-radius: 5px;
-}
-
-.nav-brder-rad2 {
-    border-radius: 2px;
-}
-
-
 /* -----------------------------------------------Grid */
 
 
@@ -244,11 +248,12 @@ ol {}
 
 @media and screen (min-wdith:) and (max-width:) {}
 
-  /*!
+
+/*!
    * SimplonStrap
    *
    * Copyright 2016 Team Simplonstrap, Inc
    * Licensed under Centrale Marseille
    *
-   * Designed and built by @githly, @ryderblack @valdiss, @ms-dos1999 and @eukavlin.
+   * Designed and built by @githly, @ryderblack, @valdiss, @ms-dos1999 and @eukavlin.
    */
