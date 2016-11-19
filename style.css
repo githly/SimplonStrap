@@ -1,6 +1,6 @@
-/* Reset User Agent */
+/* -----------------------------------------------Reset User Agent */
 
-/* General Styles */
+/* -----------------------------------------------General Styles */
 
 header {
 
@@ -19,17 +19,47 @@ section {
 }
 
 footer {
-  
+
 }
 
-/* Navigation Bar */
+/* -----------------------------------------------Navigation Bar */
 
-/* Grid */
+/* -----------------------------------------------Grid */
 
-/* Form */
+/* -----------------------------------------------Form */
 
-/* Buttons */
+/* -----------------------------------------------Buttons */
 
-/* Helper Class */
+/* -----------------------------------------------Helper Class */
 
-/* Media Queries */
+/*** Hide Elements ***/
+
+.dnone { /* full Hide elements */
+  display: none;
+}
+
+.visuallyhidden { /* elements still visible by DOM but not by User*/
+  position: absolute;
+  top:-999px; left:-9999px;
+}
+
+.visibhidden { /* hide content but space location still vsible*/
+  visibility: hidden;
+}
+
+/*** Overflow ***/
+
+.overflowhidden {
+  overflow: hidden;
+}
+
+/*** Pb with Float ***/
+
+.clearfix {
+  clear: both;
+}
+
+/* -----------------------------------------------Media Queries */
+@media and screen (min-wdith: ) and (max-width:) {
+
+}
