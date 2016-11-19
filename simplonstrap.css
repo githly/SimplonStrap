@@ -1,32 +1,160 @@
-.inputlarge {
-  width:50%;
-  border-radius: 10px;
+/* -----------------------------------------------Reset User Agent */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-.inputthin {
-
+img {
+    max-width: 100%;
 }
 
-/* Definition of the nav bar */
+
+/*** Positions ***/
+
+.porel {
+    position: relative;
+}
+
+.poabs {
+    position: absolute;
+}
+
+.pofix {
+    position: fixed;
+}
+
+.postat {
+    position: static;
+}
+
+
+/*** Display ***/
+
+.dblock {
+    display: block;
+}
+
+.dinblock {
+    display: inline-block;
+}
+
+.dflex {
+    display: flex;
+}
+
+
+/*** Float ***/
+
+.floatr {
+    float: right;
+}
+
+.floatl {
+    float: left;
+}
+
+.floatn {
+    float: none;
+}
+
+.floatfix {
+    clear: both;
+}
+
+
+/*** Hide Elements ***/
+
+.dnone {
+    /* full Hide elements */
+    display: none;
+}
+
+.visuallyhidden {
+    /* elements still visible by DOM but not by User*/
+    position: absolute;
+    top: -999px;
+    left: -9999px;
+}
+
+.visibhidden {
+    /* hide content but space location still vsible*/
+    visibility: hidden;
+}
+
+
+/*** Overflow ***/
+
+.overhidden {
+    overflow: hidden;
+}
+
+
+/*** Pb with Float ***/
+
+.floatfix {
+    clear: both;
+}
+
+
+/* -----------------------------------------------General Styles */
+
+header {}
 
 nav {
     text-align: center;
     text-transform: uppercase;
     display: flex;
+    flex-direction: row;
 }
 
-/* Float for the nav bar*/
+main {}
 
-.floatr {
-  float: right;
+aside {}
+
+section {}
+
+footer {}
+
+code {
+    display: block;
+    background: black;
+    color: white;
 }
 
-.floatl {
-  float: left;
-}
+
+/*** Titles Structures Styles ***/
+
+h1 {}
+
+h2 {}
+
+h3 {}
 
 
-/* Clear nav bar */
+/*** Link Structures Styles ***/
+
+a {}
+
+a:hover {}
+
+a:focus {}
+
+a:active {}
+
+a:visited {}
+
+
+/* -----------------------------------------------Navigation Bar */
+
+
+/*** List General Styles ***/
+
+ul li {}
+
 ul {
     list-style: none;
     padding: 0;
@@ -34,13 +162,15 @@ ul {
     width: 100%;
 }
 
+ol {}
 
-/* Take 100% of the navbar : FOR <li> elements*/
-.dinblock {
-  display: inline-block;
-}
 
 /* Width of the content in the navbar */
+
+.li-larg15 {
+    width: 15%;
+}
+
 .li-larg25 {
     width: 25%;
 }
@@ -49,10 +179,13 @@ ul {
     width: 33%;
 }
 
+
 /* Height of the content in the navbar */
+
 .li-high150 {
     height: 150px;
 }
+
 .li-high100 {
     height: 100px;
 }
@@ -61,7 +194,9 @@ ul {
     height: 50px;
 }
 
+
 /* Border Radius of the navbar */
+
 .nav-brder-rad10 {
     border-radius: 10px;
 }
@@ -73,3 +208,31 @@ ul {
 .nav-brder-rad2 {
     border-radius: 2px;
 }
+
+
+/* -----------------------------------------------Grid */
+
+
+/* -----------------------------------------------Form */
+
+.inputlarge {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.inputmedium {
+    width: ;
+}
+
+.inputthin {}
+
+
+/* -----------------------------------------------Buttons */
+
+
+/* -----------------------------------------------Helper Class */
+
+
+/* -----------------------------------------------Media Queries */
+
+@media and screen (min-wdith:) and (max-width:) {}
