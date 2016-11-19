@@ -1,5 +1,16 @@
 /* -----------------------------------------------Reset User Agent */
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 /* -----------------------------------------------General Styles */
 
 header {
@@ -22,7 +33,63 @@ footer {
 
 }
 
+code {
+  display: block;
+  background: black;
+  color: white;
+}
+
+/*** Titles Structures Styles ***/
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/*** Link Structures Styles ***/
+
+a {
+
+}
+
+a:hover {
+
+}
+
+a:focus {
+
+}
+
+a:active {
+
+}
+
+a:visited {
+
+}
+
 /* -----------------------------------------------Navigation Bar */
+
+/*** List General Styles ***/
+
+ul li {
+
+}
+
+ul {
+
+}
+
+ol {
+
+}
 
 /* -----------------------------------------------Grid */
 
@@ -31,6 +98,56 @@ footer {
 /* -----------------------------------------------Buttons */
 
 /* -----------------------------------------------Helper Class */
+
+/*** Positions ***/
+
+.porel {
+  position: relative;
+}
+
+.poabs {
+  position: absolute;
+}
+
+.pofix {
+  position: fixed;
+}
+
+.postat {
+  position: static;
+}
+
+/*** Display ***/
+
+.dblock {
+  display: block;
+}
+
+.dinblock {
+  display: inline-block;
+}
+
+.dflex {
+  display: flex;
+}
+
+/*** Float ***/
+
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+.floatn {
+  float: none;
+}
+
+.floatfix {
+  clear: both;
+}
 
 /*** Hide Elements ***/
 
@@ -49,17 +166,17 @@ footer {
 
 /*** Overflow ***/
 
-.overflowhidden {
+.overhidden {
   overflow: hidden;
 }
 
 /*** Pb with Float ***/
 
-.clearfix {
+.floatfix {
   clear: both;
 }
 
 /* -----------------------------------------------Media Queries */
-@media and screen (min-wdith: ) and (max-width:) {
+@media and screen (min-wdith: ) and (max-width: ) {
 
 }
