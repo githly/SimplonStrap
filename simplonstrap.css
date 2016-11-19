@@ -1,8 +1,14 @@
+/****regles formulaire****/
 .inputlarge {
-  width:50%;
+  width: 50%;
   border-radius: 10px;
 }
 
+.inputmedium {
+  width:
+}
+
 .inputthin {
-  
+  width: 25%;
+  border-radius: 10px;
 }
