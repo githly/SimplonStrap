@@ -31,6 +31,36 @@ img {
   position: static;
 }
 
+.pofixup{
+  position: fixed;
+  top: 0;
+}
+.pofixdown{
+  position: fixed;
+  bottom: 0;
+}
+
+.poabsdl{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.poabsdr{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.poabsul{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.poabsur{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /*** Display ***/
 
 .dblock {
@@ -230,6 +260,30 @@ ol {
 
 
 /* -----------------------------------------------Grid */
+.containflex{
+  display: flex;
+  box-sizing: border-box;
+}
+.colflexnorm{
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+.colflextiny{
+  display: flex;
+  flex: 0.5;
+  box-sizing: border-box;
+}
+.colflexmedium{
+  display: flex;
+  flex: 2;
+  box-sizing: border-box;
+}
+.colflexbig{
+  display: flex;
+  flex: 4;
+  box-sizing: border-box;
+}
 
 
 /* -----------------------------------------------Form */
