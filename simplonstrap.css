@@ -167,18 +167,17 @@ ol {}
 
 /* Width of the content in the navbar */
 
-.li-larg15 {
-    width: 15%;
+.li-larg33 {
+    width: 33%;
 }
 
 .li-larg25 {
     width: 25%;
 }
 
-.li-larg33 {
-    width: 33%;
+.li-larg15 {
+    width: 15%;
 }
-
 
 /* Height of the content in the navbar */
 
@@ -194,8 +193,16 @@ ol {}
     height: 50px;
 }
 
+.li-high25 {
+    height: 25px;
+}
+
 
 /* Border Radius of the navbar */
+
+.nav-brder-rad25 {
+    border-radius: 25px;
+}
 
 .nav-brder-rad10 {
     border-radius: 10px;
