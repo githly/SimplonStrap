@@ -1,11 +1,11 @@
 /* -----------------------------------------------Reset User Agent */
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box;
+  margin: 0; /* Reintialise all margin*/
+  padding: 0; /* Reintialise all padding*/
+  list-style-type: none; /* Delete Bullet on list */
+  text-decoration: none; /* Delete Underline on Link */
+  box-sizing: border-box; /* Padding and Border include in box size */
 }
 
 img {
@@ -125,7 +125,7 @@ footer p {
 
 code {
   display: block;
-  background: black;
+  background: #3F3F3F;
   color: white;
 }
 
@@ -140,6 +140,10 @@ h2 {
 }
 
 h3 {
+
+}
+
+h4 {
 
 }
 
@@ -189,7 +193,6 @@ ol {
   justify-content: space-around;
   border-radius:0.3em;
 	background:white;
-	box-shadow:0.7em 0.7em 0.7em #dedede;
 }
 
 .nav ul {
