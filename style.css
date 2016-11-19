@@ -19,12 +19,34 @@ section {
 }
 
 footer {
-  
+
 }
 
 /* Navigation Bar */
 
 /* Grid */
+.containflex{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.colflexnorm{
+  display: flex;
+  flex: 1;
+}
+.colflextiny{
+  display: flex;
+  flex: 0.5;
+}
+.colflexmedium{
+  display: flex;
+  flex: 2;
+}
+.colflexbig{
+  display: flex;
+  flex: 4;
+}
+/*Fin Grid*/
 
 /* Form */
 
