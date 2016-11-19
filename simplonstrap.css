@@ -12,7 +12,7 @@ img {
   max-width: 100%;
 }
 
-
+/* -----------------------------------------------Helper Class */
 /*** Positions ***/
 
 .porel {
@@ -45,6 +45,11 @@ img {
   display: flex;
 }
 
+.dflexcenter {
+  display: flex;
+  justify-content: center;
+}
+
 /*** Float ***/
 
 .floatr {
@@ -74,7 +79,7 @@ img {
   top:-999px; left:-9999px;
 }
 
-.visibhidden { /* hide content but space location still vsible*/
+.visibhidden { /* hide content but space location still visible*/
   visibility: hidden;
 }
 
@@ -110,7 +115,12 @@ section {
 }
 
 footer {
+  padding: 2%;
+}
 
+
+footer p {
+  text-align: center;
 }
 
 code {
@@ -171,6 +181,50 @@ ol {
 
 }
 
+/*** Nav ***/
+
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border-radius:0.3em;
+	background:white;
+	box-shadow:0.7em 0.7em 0.7em #dedede;
+}
+
+.nav ul {
+	padding:2%;
+  width: 100%;
+	text-align:center;
+
+}
+
+
+.nav ul li{
+	display:inline;
+}
+
+
+.nav ul li a {
+	display:inline-block;
+	padding: 0 1%;
+	background: pink;
+	border:2px solid pink;
+	border-radius:0.3em;
+	color:white;
+	font-weight:bold;
+}
+
+
+.nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
+	color:pink;
+	display:inline-block;
+	padding: 0 1%;
+	background: white;
+	border:2px solid #dedede;
+	border-radius:0.3em;
+}
+
 
 /* -----------------------------------------------Grid */
 
@@ -191,10 +245,8 @@ ol {
 }
 /* -----------------------------------------------Buttons */
 
-/* -----------------------------------------------Helper Class */
-
 
 /* -----------------------------------------------Media Queries */
-@media and screen (min-wdith: ) and (max-width: ) {
+@media and screen (min-wdith: ) and (max-width: 528px) {
 
 }
