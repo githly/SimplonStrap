@@ -1,0 +1,26 @@
+/* Grid */
+.containflex{
+  display: flex;
+  box-sizing: border-box;
+}
+.colflexnorm{
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+.colflextiny{
+  display: flex;
+  flex: 0.5;
+  box-sizing: border-box;
+}
+.colflexmedium{
+  display: flex;
+  flex: 2;
+  box-sizing: border-box;
+}
+.colflexbig{
+  display: flex;
+  flex: 4;
+  box-sizing: border-box;
+}
+/*Fin Grid*/
