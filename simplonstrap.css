@@ -1,0 +1,75 @@
+.inputlarge {
+  width:50%;
+  border-radius: 10px;
+}
+
+.inputthin {
+
+}
+
+/* Definition of the nav bar */
+
+nav {
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+}
+
+/* Float for the nav bar*/
+
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+
+/* Clear nav bar */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* Take 100% of the navbar : FOR <li> elements*/
+.dinblock {
+  display: inline-block;
+}
+
+/* Width of the content in the navbar */
+.li-larg25 {
+    width: 25%;
+}
+
+.li-larg33 {
+    width: 33%;
+}
+
+/* Height of the content in the navbar */
+.li-high150 {
+    height: 150px;
+}
+.li-high100 {
+    height: 100px;
+}
+
+.li-high50 {
+    height: 50px;
+}
+
+/* Border Radius of the navbar */
+.nav-brder-rad10 {
+    border-radius: 10px;
+}
+
+.nav-brder-rad5 {
+    border-radius: 5px;
+}
+
+.nav-brder-rad2 {
+    border-radius: 2px;
+}
