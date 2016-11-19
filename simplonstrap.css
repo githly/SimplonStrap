@@ -1,200 +1,271 @@
 /* -----------------------------------------------Reset User Agent */
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 
 /*** Positions ***/
 
 .porel {
-  position: relative;
+    position: relative;
 }
 
 .poabs {
-  position: absolute;
+    position: absolute;
 }
 
 .pofix {
-  position: fixed;
+    position: fixed;
 }
 
 .postat {
-  position: static;
+    position: static;
 }
+
 
 /*** Display ***/
 
 .dblock {
-  display: block;
+    display: block;
 }
 
 .dinblock {
-  display: inline-block;
+    display: inline-block;
 }
 
 .dflex {
-  display: flex;
+    display: flex;
 }
+
 
 /*** Float ***/
 
 .floatr {
-  float: right;
+    float: right;
 }
 
 .floatl {
-  float: left;
+    float: left;
 }
 
 .floatn {
-  float: none;
+    float: none;
 }
 
 .floatfix {
-  clear: both;
+    clear: both;
 }
+
 
 /*** Hide Elements ***/
 
-.dnone { /* full Hide elements */
-  display: none;
+.dnone {
+    /* full Hide elements */
+    display: none;
 }
 
-.visuallyhidden { /* elements still visible by DOM but not by User*/
-  position: absolute;
-  top:-999px; left:-9999px;
+.visuallyhidden {
+    /* elements still visible by DOM but not by User*/
+    position: absolute;
+    top: -999px;
+    left: -9999px;
 }
 
-.visibhidden { /* hide content but space location still vsible*/
-  visibility: hidden;
+.visibhidden {
+    /* hide content but space location still vsible*/
+    visibility: hidden;
 }
+
 
 /*** Overflow ***/
 
 .overhidden {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 
 /*** Pb with Float ***/
 
 .floatfix {
-  clear: both;
+    clear: both;
 }
 
 
 /* -----------------------------------------------General Styles */
 
-header {
+header {}
 
-}
+main {}
 
-main {
+aside {}
 
-}
+section {}
 
-aside {
-
-}
-
-section {
-
-}
-
-footer {
-
-}
+footer {}
 
 code {
-  display: block;
-  background: black;
-  color: white;
+    display: block;
+    background: black;
+    color: white;
 }
+
 
 /*** Titles Structures Styles ***/
 
-h1 {
+h1 {}
 
-}
+h2 {}
 
-h2 {
+h3 {}
 
-}
-
-h3 {
-
-}
 
 /*** Link Structures Styles ***/
 
-a {
+a {}
 
-}
+a:hover {}
 
-a:hover {
+a:focus {}
 
-}
+a:active {}
 
-a:focus {
+a:visited {}
 
-}
-
-a:active {
-
-}
-
-a:visited {
-
-}
 
 /* -----------------------------------------------Navigation Bar */
 
+
 /*** List General Styles ***/
 
-ul li {
+ul li {}
 
-}
+ul {}
 
-ul {
-
-}
-
-ol {
-
-}
+ol {}
 
 
 /* -----------------------------------------------Grid */
 
 
 /* -----------------------------------------------Form */
-.inputlarge {
-  width: 50%;
-  border-radius: 10px;
+
+.form {
+    margin: 5px 10%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    font-family: serif;
 }
 
-.inputmedium {
-  width:
+.form label {
+    display: inline-block;
+    min-width: 25%;
+    text-align: left;
+    font-weight: bold;
 }
 
-.inputthin {
-  width: 25%;
-  border-radius: 10px;
+.form fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    border: 1px solid #DDDDDD;
+    text-align: center;
+    padding: 5%;
 }
+
+.form legend {
+    font-style: italic;
+    text-align: left;
+}
+
+.form input {
+    border-radius: 3px;
+    margin: 1% 0px;
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.form input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin: 5px 5px;
+}
+
+.form input:focus {
+    transition: 0.5s;
+}
+
+.form textarea {
+    width: 40%;
+    height: 10vh;
+    margin: 5px;
+}
+
+.form select {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    width: 40%;
+}
+
+.form button {
+    float: right;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 5px;
+}
+
+.form .question {
+    text-align: left;
+    margin-top: 20px;
+}
+
+
 /* -----------------------------------------------Buttons */
+
 
 /* -----------------------------------------------Helper Class */
 
 
 /* -----------------------------------------------Media Queries */
-@media and screen (min-wdith: ) and (max-width: ) {
 
+@media screen and (max-width: 800px) {
+    .form {
+        margin: 0;
+        border-radius: 0px;
+    }
+    .form label {
+        min-width: 45%;
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+    .form input {
+        width: 45%;
+        padding: 10px;
+        font-size: 0.6em;
+    }
+    .form input[type="radio"], input[type="checkbox"] {
+        width: 20%;
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 5%;
+        margin: 0;
+    }
+    .form select {
+        width: 45%;
+    }
+    .form button {
+        padding: 10px;
+    }
 }
