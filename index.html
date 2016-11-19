@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="ms-dos_style.css" media="screen" title="no title">
     <title>SimplonStrap </title>
   </head>
   <body>
@@ -11,19 +11,29 @@
       <!-- Add Navigation Bar-->
     </header>
     <main>
-      <!-- containflex permet d'initialiser la grid -->
-      <div class="containflex">
-        <!-- colflexnorm fait une colonne flex qui s'adapte en fonction
-        du nombre de colonne que vous allez mettre dans containflex pour
-        que toute les colonnes aient la même taille-->
+      <!--
+      "containflex" allows grid's initialization.
+       Grid's size takes Div's size.
+      -->
+      <div class="taillerandom containflex">
+        <!--
+        "colflexnorm" makes a flex column that adapts to the number
+         of columns you will put in "containflex".
+         It gives the same size for all columns
+        -->
         <div class="colflexnorm">
-          <!-- Vous pouvez aussi mettre des colonnes dans
-          dans d'autres colonnes -->
+          <!--
+          You can also put columns in other columns
+          -->
 
-          <!-- Il y a 3 colonnes avec des tailles defini :
-          colflextiny : sera toujours plus petit que le reste;
-          colflexmedium : aura une taille moyenne par rapport aux autres;
-          colflexbig : sera toujours plus gros; -->
+          <!--
+          There are 3 columns with defined sizes:
+          "colflextiny": will always be smaller
+           than the rest.
+          "colflexmedium": will have an average size
+           compared to others.
+          "colflexbig": will always be bigger
+          -->
           <div class="colflextiny">
 
           </div>

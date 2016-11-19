@@ -1,4 +1,8 @@
 /* Reset User Agent */
+*{
+  margin: 0;
+  padding: 0;
+}
 
 /* General Styles */
 
@@ -25,31 +29,39 @@ footer {
 /* Navigation Bar */
 
 /* Grid */
+.taillerandom{
+  height: 600px;
+  width: 600px;
+}
+
 .containflex{
   display: flex;
-  width: 100vw;
-  height: 100vh;
   border: 8px solid blue;
+  box-sizing: border-box;
 }
 .colflexnorm{
   display: flex;
   flex: 1;
   border: 5px solid red;
+  box-sizing: border-box;
 }
 .colflextiny{
   display: flex;
   flex: 0.5;
   background-color: green;
+  box-sizing: border-box;
 }
 .colflexmedium{
   display: flex;
   flex: 2;
   background-color: purple;
+  box-sizing: border-box;
 }
 .colflexbig{
   display: flex;
   flex: 4;
   background-color: yellow;
+  box-sizing: border-box;
 }
 /*Fin Grid*/
 
