@@ -1,0 +1,55 @@
+/*Definition of the nav bar */
+
+nav {
+    text-align: center;
+    display: flex;
+}
+
+/*Position of the nav bar */
+
+.nav-flo-L {
+    float: left;
+}
+
+.nav-flo-R {
+    float: right;
+}
+
+/*Clear nav bar */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/*Width of the content in the navbar */
+.li-larg25 {
+    width: 25%;
+}
+
+.li-larg33 {
+    width: 33%;
+}
+
+/*Height of the content in the navbar */
+.li-high150 {
+    height: 150px;
+}
+
+.li-high50 {
+    height: 50px;
+}
+
+/*Border Radius of the content in the navbar */
+.li-brder-rad10 {
+    border-radius: 10px;
+}
+
+.li-brder-rad5 {
+    border-radius: 5px;
+}
+
+.li-brder-rad1 {
+    border-radius: 2px;
+}
