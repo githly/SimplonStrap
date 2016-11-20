@@ -158,11 +158,159 @@
           <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
             <h4> Le Html </h4>
             <code>
+              &ltform class="form" action="index.html" method="post"&gt
+                &ltfieldset&gt
+                    &ltlegend&gtInformations personnelles&lt/legend&gt
+
+                    &ltlabel for="sexe"&gtVotre Titre&lt/label&gt
+                    &ltselect class="sexe" name="sexe"&gt
+                          &ltoption value="option"&gtMonsieur&lt/option&gt
+                          &ltoption value="option"&gtMadame&lt/option&gt
+                          &ltoption value="option"&gtSeigneur&lt/option&gt
+                          &ltoption value="option"&gtLord&lt/option&gt
+                        &lt/select&gt
+
+                    &ltdiv&gt
+                        &ltlabel for="prenom"&gtPrénom &lt/label&gt
+                        &ltinput type="text" name="firstname" id="prenom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="nom"&gtNom &lt/label&gt
+                        &ltinput type="text" name="name" id="nom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress1"&gtAdresse 1 &lt/label&gt
+                        &ltinput type="text" name="adresse1" id="adress1"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress2"&gtAdresse 2 &lt/label&gt
+                        &ltinput type="text" name="adresse2" id="adress2"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="postal"&gtCode postal &lt/label&gt
+                        &ltinput type="text" name="postal" id="postal" maxlength="5"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="email"&gtEmail&lt/label&gt
+                        &ltinput type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="tel">Téléphone &lt/label&gt
+                        &ltinput type="tel" name="tel" id="tel" maxlength="10"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="date">Date de naissance&lt/label&gt
+                        &ltinput type="date" name="date" id="date"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="url">Skyblog &lt/label&gt
+                        &ltinput type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/"&gt
+                    &lt/div&gt
+                &lt/fieldset&gt
+
+                &ltfieldset id="f2"&gt
+                    &ltlegend&gtComment avez-vous connu ce site?&lt/legend&gt
+                    &ltp class="question"&gtComment avez-vous connu ce site?&lt/p&gt
+                    &ltdiv id="r1"&gt
+                        &ltinput type="radio" name="radio" id="internet" value="Internet"&gt
+                        &ltlabel for="internet"&gtInternet&lt/label&gt
+                        &ltinput type="radio" name="radio" id="journal" value="Journal papier"&gt
+                        &ltlabel for="journal"&gtJournal Papier&lt/label&gt
+                        &ltinput type="radio" name="radio" id="bouche" value="Bouche"&gt
+                        &ltlabel for="bouche"&gtBouche à oreille&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtDe quel instrument jouez vous?&lt/p&gt
+                    &ltdiv id="r2"&gt
+                        &ltinput type="checkbox" name="basse" id="checkbox" value="basse"&gt
+                        &ltlabel for="basse"&gtSlappa da bass!&lt/label&gt
+                        &ltinput type="checkbox" name="guitare" id="guitare" value="guitare"&gt
+                        &ltlabel for="guitare"&gtTocard de grateux!&lt/label&gt
+                        &ltinput type="checkbox" name="batterie" id="batterie" value="batterie"&gt
+                        &ltlabel for="batterie"&gtPoum tchak!&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtCommentaires supplémentaires&lt/p&gt
+                    &lttextarea name="name" rows="8" cols="40"&gt&lt/textarea&gt
+                &lt/fieldset&gt
+                &ltdiv class="button"&gt
+                    &ltbutton type="submit"&gtEnvoyer votre message&lt/button&gt
+                &lt/div&gt
+              &lt/form&gt
             </code>
           </div>
           <div class="containerhtml"><!--Nom de la class a voir avec Julien -->
             <h4> Le Css </h4>
             <code>
+              .form {
+                  margin: 5px 10%;
+                  padding: 2%;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  font-family: serif;
+              }
+
+              .form label {
+                  display: inline-block;
+                  min-width: 25%;
+                  text-align: left;
+                  font-weight: bold;
+              }
+
+              .form fieldset {
+                  margin: 10px;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  border: 1px solid #DDDDDD;
+                  text-align: center;
+                  padding: 5%;
+              }
+
+              .form legend {
+                  font-style: italic;
+                  text-align: left;
+              }
+
+              .form input {
+                  border-radius: 3px;
+                  margin: 1% 0px;
+                  width: 40%;
+                  padding: 5px;
+                  border: 1px solid #CCCCCC;
+              }
+
+              .form input[type="radio"], input[type="checkbox"] {
+                  width: auto;
+                  margin: 5px 5px;
+              }
+
+              .form input:focus {
+                  transition: 0.5s;
+              }
+
+              .form textarea {
+                  width: 40%;
+                  height: 10vh;
+                  margin: 5px;
+              }
+
+              .form select {
+                  border: 1px solid #CCCCCC;
+                  padding: 5px;
+                  width: 40%;
+              }
+
+              .form button {
+                  float: right;
+                  border-radius: 10px;
+                  padding: 5px;
+                  background-color: #4CAF50;
+                  color: white;
+                  margin: 5px;
+              }
+
+              .form .question {
+                  text-align: left;
+                  margin-top: 20px;
+              }
             </code>
           </div>
         </div>
@@ -175,7 +323,9 @@
           hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor
           hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor...
           Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor; hodor hodor hodor hodor! </p>
+          hodor hodor; hodor hodor hodor hodor!
+          <button Class="btn" type="button" name="button">Cliquez ici</button>
+         </p>
         <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
           <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
             <h4> Le Html </h4>

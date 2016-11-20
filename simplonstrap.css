@@ -364,6 +364,20 @@
         }
 
         /* -----------------------------------------------Buttons */
+        .btn {
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 6px grey;
+        }
+
+        .btn:active{
+            box-shadow: inset 1px 1px 5px grey;
+        }
+
+        .btn:focus{
+            outline: none;
+        }
         /* -----------------------------------------------Helper Class */
         /* -----------------------------------------------Media Queries */
 
