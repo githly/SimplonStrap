@@ -351,12 +351,22 @@
 
         .form button {
             float: right;
-            border-radius: 10px;
-            padding: 5px;
+            border:none;
+            border-radius: 5px;
+            padding: 8px 15px;
             background-color: #4CAF50;
             color: white;
-            margin: 5px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
         }
+
+        .form button:active{
+            box-shadow: inset 1px 1px 5px grey;
+        }
+
+        .form button:focus{
+            outline: none;
+        }
+
 
         .form .question {
             text-align: left;
@@ -365,10 +375,10 @@
 
         /* -----------------------------------------------Buttons */
         .btn {
-            padding: 8px;
-            border: none;
-            border-radius: 10px;
-            box-shadow: 1px 1px 6px grey;
+            padding: 8px 15px;
+            border:none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
         }
 
         .btn:active{
