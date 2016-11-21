@@ -1,18 +1,3 @@
-/* -----------------------------------------------Reset User Agent */
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-}
-
-
 /*** Positions ***/
 
 .porel {
@@ -258,7 +243,6 @@ ol {}
    * Designed and built by @githly, @ryderblack, @valdiss, @ms-dos1999 and @eukavlin.
    */
 
-=======
 /* -----------------------------------------------Reset User Agent */
 
 * {
@@ -536,6 +520,252 @@ ol {}
 
 
 /*There are 3 columns with defined sizes:
+
+        /* -----------------------------------------------Reset User Agent */
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            margin: 0;
+            /* Reintialise all margin*/
+            padding: 0;
+            /* Reintialise all padding*/
+            list-style-type: none;
+            /* Delete Bullet on list */
+            text-decoration: none;
+            /* Delete Underline on Link */
+            box-sizing: border-box;
+            /* Padding and Border include in box size */
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+        /* -----------------------------------------------Helper Class */
+        /*** Positions ***/
+
+        .porel {
+            position: relative;
+        }
+
+        .poabs {
+            position: absolute;
+        }
+
+        .pofix {
+            position: fixed;
+        }
+
+        .postat {
+            position: static;
+        }
+
+        .pofixup {
+            position: fixed;
+            top: 0;
+        }
+
+        .pofixdown {
+            position: fixed;
+            bottom: 0;
+        }
+
+        .poabsdl {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .poabsdr {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .poabsul {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .poabsur {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        /*** Display ***/
+
+        .dblock {
+            display: block;
+        }
+
+        .dinblock {
+            display: inline-block;
+        }
+
+        .dflex {
+            display: flex;
+        }
+
+        .dflexcenter {
+            display: flex;
+            justify-content: center;
+        }
+        /*** Float ***/
+
+        .floatr {
+            float: right;
+        }
+
+        .floatl {
+            float: left;
+        }
+
+        .floatn {
+            float: none;
+        }
+
+        .floatfix {
+            clear: both;
+        }
+        /*** Hide Elements ***/
+
+        .dnone {
+            /* full Hide elements */
+            display: none;
+        }
+
+        .visuallyhidden {
+            /* elements still visible by DOM but not by User*/
+            position: absolute;
+            top: -999px;
+            left: -9999px;
+        }
+
+        .visibhidden {
+            /* hide content but space location still visible*/
+            visibility: hidden;
+        }
+        /*** Overflow ***/
+
+        .overhidden {
+            overflow: hidden;
+        }
+        /*** Pb with Float ***/
+
+        .floatfix {
+            clear: both;
+        }
+        /* -----------------------------------------------General Styles */
+
+        header {}
+
+        main {}
+
+        aside {}
+
+        section {}
+
+        footer {
+            padding: 2%;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        code {
+            display: block;
+            background: #3F3F3F;
+            color: white;
+        }
+        /*** Titles Structures Styles ***/
+
+        h1 {}
+
+        h2 {}
+
+        h3 {}
+
+        h4 {}
+        /*** Link Structures Styles ***/
+
+        a {}
+
+        a:hover {}
+
+        a:focus {}
+
+        a:active {}
+
+        a:visited {}
+        /* -----------------------------------------------Navigation Bar */
+        /*** List General Styles ***/
+
+        ul li {}
+
+        ul {}
+
+        ol {}
+        /*** Nav ***/
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            border-radius: 0.3em;
+            background: white;
+        }
+
+        .nav ul {
+            padding: 2%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav ul li {
+            display: inline;
+        }
+
+        .nav ul li a {
+            display: inline-block;
+            padding: 0 1%;
+            background: pink;
+            border: 2px solid pink;
+            border-radius: 0.3em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
+            color: pink;
+            display: inline-block;
+            padding: 0 1%;
+            background: white;
+            border: 2px solid #dedede;
+            border-radius: 0.3em;
+        }
+        /* -----------------------------------------------Grid */
+
+        /*"containflex" allows grid's initialization.
+           Grid's size takes Div's size.*/
+
+        .containflex {
+            display: flex;
+            box-sizing: border-box;
+        }
+        /*"colnorm" makes a flex column that adapts to the number
+             of columns you will put in "containflex".
+             It gives the same size for all columns*/
+
+        .colnorm {
+            flex: 1;
+            box-sizing: border-box;
+        }
+        /*There are 3 columns with defined sizes:
               "coltiny": will always be smaller
                than the rest.
               "colmedium": will have an average size
@@ -722,3 +952,176 @@ ol {}
         padding: 10px;
     }
 }
+
+        .coltiny {
+            flex: 0.5;
+            box-sizing: border-box;
+        }
+
+        .colmedium {
+            flex: 2;
+            box-sizing: border-box;
+        }
+
+        .colbig {
+            flex: 4;
+            box-sizing: border-box;
+        }
+        /* With "colflex" you can also put columns in other columns */
+
+        .colflexnorm {
+            display: flex;
+            flex: 1;
+            box-sizing: border-box;
+        }
+
+        .colflextiny {
+            display: flex;
+            flex: 0.5;
+            box-sizing: border-box;
+        }
+
+        .colflexmedium {
+            display: flex;
+            flex: 2;
+            box-sizing: border-box;
+        }
+
+        .colflexbig {
+            display: flex;
+            flex: 4;
+            box-sizing: border-box;
+        }
+
+        /* -----------------------------------------------Form */
+
+        .form {
+            margin: 5px 10%;
+            padding: 2%;
+            border-radius: 10px;
+            background-color: #EEEEEE;
+            font-family: serif;
+        }
+
+        .form label {
+            display: inline-block;
+            min-width: 25%;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .form fieldset {
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #EEEEEE;
+            border: 1px solid #DDDDDD;
+            text-align: center;
+            padding: 5%;
+        }
+
+        .form legend {
+            font-style: italic;
+            text-align: left;
+        }
+
+        .form input {
+            border-radius: 3px;
+            margin: 1% 0px;
+            width: 40%;
+            padding: 5px;
+            border: 1px solid #CCCCCC;
+        }
+
+        .form input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin: 5px 5px;
+        }
+
+        .form input:focus {
+            transition: 0.5s;
+        }
+
+        .form textarea {
+            width: 40%;
+            height: 10vh;
+            margin: 5px;
+        }
+
+        .form select {
+            border: 1px solid #CCCCCC;
+            padding: 5px;
+            width: 40%;
+        }
+
+        .form button {
+            float: right;
+            border:none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+        }
+
+        .form button:active{
+            box-shadow: inset 1px 1px 5px grey;
+        }
+
+        .form button:focus{
+            outline: none;
+        }
+
+
+        .form .question {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* -----------------------------------------------Buttons */
+        .btn {
+            padding: 8px 15px;
+            border:none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+        }
+
+        .btn:active{
+            box-shadow: inset 1px 1px 5px grey;
+        }
+
+        .btn:focus{
+            outline: none;
+        }
+        /* -----------------------------------------------Helper Class */
+        /* -----------------------------------------------Media Queries */
+
+        @media and screen (min-wdith:) and (max-width: 528px) {
+            .form {
+                margin: 0;
+                border-radius: 0px;
+            }
+            .form label {
+                min-width: 45%;
+                margin-bottom: 10px;
+                font-size: 0.8em;
+            }
+            .form input {
+                width: 45%;
+                padding: 10px;
+                font-size: 0.6em;
+            }
+            .form input[type="radio"], input[type="checkbox"] {
+                width: 20%;
+                display: block;
+                position: relative;
+                top: 15px;
+                left: 5%;
+                margin: 0;
+            }
+            .form select {
+                width: 45%;
+            }
+            .form button {
+                padding: 10px;
+            }
+        }

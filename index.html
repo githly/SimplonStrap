@@ -12,7 +12,7 @@
 
 <body>
     <header>
-<<<<<<< HEAD
+
         <h1> SimplonStrap : The Best CSS Framework Forever and ever </h1>
         <!-- Add Navigation Bar-->
         <nav>
@@ -50,7 +50,7 @@
             <!-- Add Helper Class -->
             <pre><code>
           /* -----------------------------------------------Helper Class */
-=======
+
       <h1> SimplonStrap </h1>
       <h2> The Best CSS Framework Forever and ever</h2>
       <!-- Add Navigation Bar-->
@@ -69,6 +69,7 @@
     </nav>
     </header>
     <main>
+
       <section id="menu">
         <h3> Les Barres de Navigation </h3>
         <!-- Add Menu -->
@@ -121,6 +122,7 @@
         <p> <form class="form" action="index.html" method="post">
             <fieldset>
                 <legend>Informations personnelles</legend>
+
 
                 <label for="sexe">Votre Titre</label>
                 <select class="sexe" name="sexe">
@@ -210,7 +212,365 @@
                           &ltoption value="option"&gtSeigneur&lt/option&gt
                           &ltoption value="option"&gtLord&lt/option&gt
                         &lt/select&gt
->>>>>>> master
+
+
+                    &ltdiv&gt
+                        &ltlabel for="prenom"&gtPrénom &lt/label&gt
+                        &ltinput type="text" name="firstname" id="prenom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="nom"&gtNom &lt/label&gt
+                        &ltinput type="text" name="name" id="nom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress1"&gtAdresse 1 &lt/label&gt
+                        &ltinput type="text" name="adresse1" id="adress1"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress2"&gtAdresse 2 &lt/label&gt
+                        &ltinput type="text" name="adresse2" id="adress2"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="postal"&gtCode postal &lt/label&gt
+                        &ltinput type="text" name="postal" id="postal" maxlength="5"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="email"&gtEmail&lt/label&gt
+                        &ltinput type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="tel">Téléphone &lt/label&gt
+                        &ltinput type="tel" name="tel" id="tel" maxlength="10"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="date">Date de naissance&lt/label&gt
+                        &ltinput type="date" name="date" id="date"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="url">Skyblog &lt/label&gt
+                        &ltinput type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/"&gt
+                    &lt/div&gt
+                &lt/fieldset&gt
+
+                &ltfieldset id="f2"&gt
+                    &ltlegend&gtComment avez-vous connu ce site?&lt/legend&gt
+                    &ltp class="question"&gtComment avez-vous connu ce site?&lt/p&gt
+                    &ltdiv id="r1"&gt
+                        &ltinput type="radio" name="radio" id="internet" value="Internet"&gt
+                        &ltlabel for="internet"&gtInternet&lt/label&gt
+                        &ltinput type="radio" name="radio" id="journal" value="Journal papier"&gt
+                        &ltlabel for="journal"&gtJournal Papier&lt/label&gt
+                        &ltinput type="radio" name="radio" id="bouche" value="Bouche"&gt
+                        &ltlabel for="bouche"&gtBouche à oreille&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtDe quel instrument jouez vous?&lt/p&gt
+                    &ltdiv id="r2"&gt
+                        &ltinput type="checkbox" name="basse" id="checkbox" value="basse"&gt
+                        &ltlabel for="basse"&gtSlappa da bass!&lt/label&gt
+                        &ltinput type="checkbox" name="guitare" id="guitare" value="guitare"&gt
+                        &ltlabel for="guitare"&gtTocard de grateux!&lt/label&gt
+                        &ltinput type="checkbox" name="batterie" id="batterie" value="batterie"&gt
+                        &ltlabel for="batterie"&gtPoum tchak!&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtCommentaires supplémentaires&lt/p&gt
+                    &lttextarea name="name" rows="8" cols="40"&gt&lt/textarea&gt
+                &lt/fieldset&gt
+                &ltdiv class="button"&gt
+                    &ltbutton type="submit"&gtEnvoyer votre message&lt/button&gt
+                &lt/div&gt
+              &lt/form&gt
+            </code>
+          </div>
+          <div class="containerhtml"><!--Nom de la class a voir avec Julien -->
+            <h4> Le Css </h4>
+          <code>
+              .form {
+                  margin: 5px 10%;
+                  padding: 2%;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  font-family: serif;
+              }
+
+              .form label {
+                  display: inline-block;
+                  min-width: 25%;
+                  text-align: left;
+                  font-weight: bold;
+              }
+
+              .form fieldset {
+                  margin: 10px;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  border: 1px solid #DDDDDD;
+                  text-align: center;
+                  padding: 5%;
+              }
+
+              .form legend {
+                  font-style: italic;
+                  text-align: left;
+              }
+
+              .form input {
+                  border-radius: 3px;
+                  margin: 1% 0px;
+                  width: 40%;
+                  padding: 5px;
+                  border: 1px solid #CCCCCC;
+              }
+
+              .form input[type="radio"], input[type="checkbox"] {
+                  width: auto;
+                  margin: 5px 5px;
+              }
+
+              .form input:focus {
+                  transition: 0.5s;
+              }
+
+              .form textarea {
+                  width: 40%;
+                  height: 10vh;
+                  margin: 5px;
+              }
+
+              .form select {
+                  border: 1px solid #CCCCCC;
+                  padding: 5px;
+                  width: 40%;
+              }
+
+              .form button {
+                  float: right;
+                  border-radius: 10px;
+                  padding: 5px;
+                  background-color: #4CAF50;
+                  color: white;
+                  margin: 5px;
+              }
+
+              .form .question {
+                  text-align: left;
+                  margin-top: 20px;
+              }
+            </code>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section id="buttons">
+        <h3> Les Boutons </h3>
+        <!-- Add Buttons -->
+        <p> Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor? Hodor
+          hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor
+          hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor...
+          Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
+          hodor hodor; hodor hodor hodor hodor!
+          <button Class="btn" type="button" name="button">Cliquez ici</button>
+         </p>
+        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
+          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+            <h4> Le Html </h4>
+            <code>
+            </code>
+          </div>
+          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+            <h4> Le Css </h4>
+            <code>
+            </code>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section id="reset">
+        <h3> Le Reset User Agent </h3>
+        <!-- Add Reset User Agent -->
+        <p> Le Reset User Agent permet de réinitialiser les paramètres d'affichage par défaut du navigateur que l'on ne souhaite pas conserver dans notre code </p>
+        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
+          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+            <h4> Le Css </h4>
+            <code>
+              /* -----------------------------------------------Reset User Agent */
+
+              * {
+                margin: 0; /* Reintialise all margin*/
+                padding: 0; /* Reintialise all padding*/
+                list-style-type: none; /* Delete Bullet on list */
+                text-decoration: none; /* Delete Underline on Link */
+                box-sizing: border-box; /* Padding and Border include in box size */
+              }
+
+              img {
+                max-width: 100%;
+              }
+            </code>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section id="helper">
+        <h3> Les Helper Class </h3>
+        <!-- Add Helper Class -->
+        <p> Les Helper Class sont des classes qui permettent d'accellerer votre vitesse de production.
+          <br>Nous en avons construit plusieurs types : Position, Display, Cacher un élément, etc etc </p>
+        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
+          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+            <h4> Les Positions et Display </h4>
+            <code>
+              /*** Positions ***/
+
+              .porel {
+                position: relative;
+              }
+
+              .poabs {
+                position: absolute;
+              }
+
+              .pofix {
+                position: fixed;
+              }
+
+              .postat {
+                position: static;
+              }
+
+              /*** Display ***/
+
+              .dblock {
+                display: block;
+              }
+
+              .dinblock {
+                display: inline-block;
+              }
+
+              .dflex {
+                display: flex;
+              }
+
+              .dflexcenter {
+                display: flex;
+                justify-content: center;
+              }
+            </code>
+          </div>
+          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+            <h4> Cacher un élément  </h4>
+            <code>
+/*** Hide Elements ***/
+.dnone { /* full Hide elements */
+  display: none;
+}
+
+          .floatfix {
+            clear: both;
+          }
+        </code></pre>
+        </section>
+    </aside>
+    <footer>
+        <section>
+            <!-- A voir pr le contenu -->
+        </section>
+        <section>
+            <!-- A voir pr le contenu -->
+        </section>
+        <section>
+            <!-- A voir pr le contenu  -->
+        </section>
+
+
+                <label for="sexe">Votre Titre</label>
+                <select class="sexe" name="sexe">
+                      <option value="option">Monsieur</option>
+                      <option value="option">Madame</option>
+                      <option value="option">Seigneur</option>
+                      <option value="option">Lord</option>
+                    </select>
+
+                <div>
+                    <label for="prenom">Prénom </label>
+                    <input type="text" name="firstname" id="prenom">
+                </div>
+                <div>
+                    <label for="nom">Nom </label>
+                    <input type="text" name="name" id="nom">
+                </div>
+                <div>
+                    <label for="adress1">Adresse 1 </label>
+                    <input type="text" name="adresse1" id="adress1">
+                </div>
+                <div>
+                    <label for="adress2">Adresse 2 </label>
+                    <input type="text" name="adresse2" id="adress2">
+                </div>
+                <div>
+                    <label for="postal">Code postal </label>
+                    <input type="text" name="postal" id="postal" maxlength="5">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com">
+                </div>
+                <div>
+                    <label for="tel">Téléphone </label>
+                    <input type="tel" name="tel" id="tel" maxlength="10">
+                </div>
+                <div>
+                    <label for="date">Date de naissance</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="url">Skyblog </label>
+                    <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                </div>
+            </fieldset>
+
+            <fieldset id="f2">
+                <legend>Comment avez-vous connu ce site?</legend>
+                <p class="question">Comment avez-vous connu ce site?</p>
+                <div id="r1">
+                    <input type="radio" name="radio" id="internet" value="Internet">
+                    <label for="internet">Internet</label>
+                    <input type="radio" name="radio" id="journal" value="Journal papier">
+                    <label for="journal">Journal Papier</label>
+                    <input type="radio" name="radio" id="bouche" value="Bouche">
+                    <label for="bouche">Bouche à oreille</label>
+                </div>
+                <p class="question">De quel instrument jouez vous?</p>
+                <div id="r2">
+                    <input type="checkbox" name="basse" id="checkbox" value="basse">
+                    <label for="basse">Slappa da bass!</label>
+                    <input type="checkbox" name="guitare" id="guitare" value="guitare">
+                    <label for="guitare">Tocard de grateux!</label>
+                    <input type="checkbox" name="batterie" id="batterie" value="batterie">
+                    <label for="batterie">Poum tchak!</label>
+                </div>
+                <p class="question">Commentaires supplémentaires</p>
+                <textarea name="name" rows="8" cols="40">coucoucoucc</textarea>
+            </fieldset>
+            <div class="button">
+                <button type="submit">Envoyer votre message</button>
+            </div>
+        </form> </p>
+        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
+          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+            <h4> Le Html </h4>
+            <code>
+              &ltform class="form" action="index.html" method="post"&gt
+                &ltfieldset&gt
+                    &ltlegend&gtInformations personnelles&lt/legend&gt
+
+                    &ltlabel for="sexe"&gtVotre Titre&lt/label&gt
+                    &ltselect class="sexe" name="sexe"&gt
+                          &ltoption value="option"&gtMonsieur&lt/option&gt
+                          &ltoption value="option"&gtMadame&lt/option&gt
+                          &ltoption value="option"&gtSeigneur&lt/option&gt
+                          &ltoption value="option"&gtLord&lt/option&gt
+                        &lt/select&gt
 
                     &ltdiv&gt
                         &ltlabel for="prenom"&gtPrénom &lt/label&gt
@@ -463,24 +823,7 @@
   display: none;
 }
 
-<<<<<<< HEAD
-          .floatfix {
-            clear: both;
-          }
-        </code></pre>
-        </section>
-    </aside>
-    <footer>
-        <section>
-            <!-- A voir pr le contenu -->
-        </section>
-        <section>
-            <!-- A voir pr le contenu -->
-        </section>
-        <section>
-            <!-- A voir pr le contenu  -->
-        </section>
-=======
+
 .visuallyhidden { /* elements still visible by DOM but not by User*/
   position: absolute;
   top:-999px; left:-9999px;
@@ -544,7 +887,7 @@
         <span class="icon-up-open" aria-hidden="true"></span>
         <span class="visuallyhidden">Haut de Page</span>
       </a>
->>>>>>> master
+
     </footer>
 </body>
 
