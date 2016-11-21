@@ -492,7 +492,7 @@ ol {}
 
 /* -----------------------------------------------Media Queries */
 
-@media and screen (min-wdith:) and (max-width: 528px) {
+@media screen and (max-width: 528px) {
     .form {
         margin: 0;
         border-radius: 0px;
