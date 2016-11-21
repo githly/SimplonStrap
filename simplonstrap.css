@@ -446,7 +446,6 @@ ol {}
 }
 
 .form button {
-    float: right;
     border: none;
     border-radius: 5px;
     padding: 8px 15px;
