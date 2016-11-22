@@ -325,17 +325,41 @@
         <section id="buttons">
             <h3> Les Boutons </h3>
             <!-- Add Buttons -->
-            <p> Ci-dessous vous trouverez les boutons: <br><br>
-              Un bouton neutre avec un border gris, un background-color gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité et un cursor: pointer.<br><br>
-              Ajoutez la classe "vld" afin de changer la couleur de background en vert.<br><br>
-              Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
+            <p> Ci-dessous vous trouverez les boutons: <br><br> Un bouton neutre avec un border gris, un background-color gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité, un cursor: pointer,<br> une suppression de l'outline lors d'un focus et enfin un shadow inset afin de donner une impression "d'enfoncer" le bouton quand il est activé.<br><br> Ajoutez
+                la classe "vld" afin de changer la couleur de background en vert.<br><br> Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
             </p>
             <div class="containbtn">
-              <button class="btn" type="button" name="button">Cliquez ici</button>
-              <button class="btn vld" type="button" name="button">Valider</button>
-              <button class="btn anl" type="button" name="button">Annuler</button>
+                <button class="btn" type="button" name="button">Cliquez ici</button>
+                <button class="btn vld" type="button" name="button">Valider</button>
+                <button class="btn anl" type="button" name="button">Annuler</button>
             </div>
+            <h4> Le Css </h4>
+            <code>
+              .btn {
+                  padding: 8px 0px;
+                  width: 100px;
+                  border: 1px solid #CCCCCC;
+                  border-radius: 5px;
+                  background-color: rgba(244, 245, 247, 0.7);
+                  cursor: pointer;
+              }
 
+              .btn.vld {
+                  background-color: rgb(150, 211, 160);
+              }
+
+              .btn.anl {
+                  background-color: rgba(244, 75, 66, 0.7);
+              }
+
+              .btn:active {
+                  box-shadow: inset 1px 1px 5px grey;
+              }
+
+              .btn:focus {
+                  outline: none;
+              }
+            </code>
             <div class="containglobalcode">
                 <!--Nom de la class a voir avec Julien -->
                 <div class="containerhtml">

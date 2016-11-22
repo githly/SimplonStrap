@@ -487,11 +487,11 @@ ol {}
     background-color: rgba(244, 75, 66, 0.7);
 }
 
-.btn:active, .btn.vld:active, .btn.anl:active {
+.btn:active {
     box-shadow: inset 1px 1px 5px grey;
 }
 
-.btn:focus, .btn.vld:focus, .btn.anl:focus{
+.btn:focus {
     outline: none;
 }
 
