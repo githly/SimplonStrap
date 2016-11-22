@@ -79,83 +79,87 @@
         <section id="form">
             <h3> Le Formulaire </h3>
             <!-- Add Form -->
-            <p>
-                <form class="form" action="index.html" method="post">
-                    <fieldset>
-                        <legend>Informations personnelles</legend>
+            <p> Voici donc le formulaire, très simple et modulable à souhait. Vous remarquerez le design flat afin d'améliorer la lisibilité. <br><br> Pour obtenir ce formulaire pré-formaté, il suffit d'attribuer la classe "form" à votre formulaire. <br><br>                La balise form n'a pas de bordure mais un border radius afin d'alléger le design. <br><br> Les Fieldset ont une bordure grise toute simple, un text-align:center est appliqué afin de centrer son contenu.<br><br> Les legend sont en italique
+                avec un text-align: left.<br><br> Les label sont en inline-block afin de pouvoir utiliser un text-align:left tout en leur attribuant une width.<br> Vous remarquerez qu'ils sont également en bold afin d'améliorer leur lisibilité.<br><br>                Les imput ont un padding de 5px, toujours pour améliorer la lisibilité. Leur width est fixée à 40% du parent. <br> Vous noterez que les input de type radio et checkbox ont une width:auto afin d'etre au plus près de leurs labels respectifs.<br><br>                Une transition de 0.5s a été ajoutée sur le focus des input, toujours afin de rentre le visuel plus agréable.<br> Les balises textarea sont quant à elles d'une width de 40% afin d'etre en accord avec les input <br><br> La balise select
+                à été egalement remodelée très légèrement avec une width de 40% (toujours pour la même raison) et un border de la même couleur que les input. <br><br> Enfin concernant le button, la bordure a été enlevée, un background-color vert ajouté,
+                une petite box shadow appliquée de manière très légère et la couleur du texte changé en blanc.<br> Lorsque ce bouton est activé, un box shadow en inset est appliqué afin de donner un effet de bouton qui "s'enfonce". <br>
 
-                        <label for="sexe">Votre Titre</label>
-                        <select class="sexe" name="sexe">
+            </p>
+            <form class="form" action="index.html" method="post">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+
+                    <label for="sexe">Votre Titre</label>
+                    <select class="sexe" name="sexe">
                       <option value="option">Monsieur</option>
                       <option value="option">Madame</option>
                       <option value="option">Seigneur</option>
                       <option value="option">Lord</option>
                     </select>
 
-                        <div>
-                            <label for="prenom">Prénom </label>
-                            <input type="text" name="firstname" id="prenom">
-                        </div>
-                        <div>
-                            <label for="nom">Nom </label>
-                            <input type="text" name="name" id="nom">
-                        </div>
-                        <div>
-                            <label for="adress1">Adresse 1 </label>
-                            <input type="text" name="adresse1" id="adress1">
-                        </div>
-                        <div>
-                            <label for="adress2">Adresse 2 </label>
-                            <input type="text" name="adresse2" id="adress2">
-                        </div>
-                        <div>
-                            <label for="postal">Code postal </label>
-                            <input type="text" name="postal" id="postal" maxlength="5">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com">
-                        </div>
-                        <div>
-                            <label for="tel">Téléphone </label>
-                            <input type="tel" name="tel" id="tel" maxlength="10">
-                        </div>
-                        <div>
-                            <label for="date">Date de naissance</label>
-                            <input type="date" name="date" id="date">
-                        </div>
-                        <div>
-                            <label for="url">Skyblog </label>
-                            <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
-                        </div>
-                    </fieldset>
+                    <div>
+                        <label for="prenom">Prénom </label>
+                        <input type="text" name="firstname" id="prenom">
+                    </div>
+                    <div>
+                        <label for="nom">Nom </label>
+                        <input type="text" name="name" id="nom">
+                    </div>
+                    <div>
+                        <label for="adress1">Adresse 1 </label>
+                        <input type="text" name="adresse1" id="adress1">
+                    </div>
+                    <div>
+                        <label for="adress2">Adresse 2 </label>
+                        <input type="text" name="adresse2" id="adress2">
+                    </div>
+                    <div>
+                        <label for="postal">Code postal </label>
+                        <input type="text" name="postal" id="postal" maxlength="5">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com">
+                    </div>
+                    <div>
+                        <label for="tel">Téléphone </label>
+                        <input type="tel" name="tel" id="tel" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="date">Date de naissance</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="url">Skyblog </label>
+                        <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                    </div>
+                </fieldset>
 
-                    <fieldset id="f2">
-                        <legend>Comment avez-vous connu ce site?</legend>
-                        <p class="question">Comment avez-vous connu ce site?</p>
-                        <div id="r1">
-                            <input type="radio" name="radio" id="internet" value="Internet">
-                            <label for="internet">Internet</label>
-                            <input type="radio" name="radio" id="journal" value="Journal papier">
-                            <label for="journal">Journal Papier</label>
-                            <input type="radio" name="radio" id="bouche" value="Bouche">
-                            <label for="bouche">Bouche à oreille</label>
-                        </div>
-                        <p class="question">De quel instrument jouez vous?</p>
-                        <div id="r2">
-                            <input type="checkbox" name="basse" id="checkbox" value="basse">
-                            <label for="basse">Slappa da bass!</label>
-                            <input type="checkbox" name="guitare" id="guitare" value="guitare">
-                            <label for="guitare">Tocard de grateux!</label>
-                            <input type="checkbox" name="batterie" id="batterie" value="batterie">
-                            <label for="batterie">Poum tchak!</label>
-                        </div>
-                        <p class="question">Commentaires supplémentaires</p>
-                        <textarea name="name" rows="8" cols="40">coucoucoucc</textarea>
-                    </fieldset>
-                    <button type="submit">Envoyer votre message</button>
-                </form>
-            </p>
+                <fieldset id="f2">
+                    <legend>Comment avez-vous connu ce site?</legend>
+                    <p class="question">Comment avez-vous connu ce site?</p>
+                    <div id="r1">
+                        <input type="radio" name="radio" id="internet" value="Internet">
+                        <label for="internet">Internet</label>
+                        <input type="radio" name="radio" id="journal" value="Journal papier">
+                        <label for="journal">Journal Papier</label>
+                        <input type="radio" name="radio" id="bouche" value="Bouche">
+                        <label for="bouche">Bouche à oreille</label>
+                    </div>
+                    <p class="question">De quel instrument jouez vous?</p>
+                    <div id="r2">
+                        <input type="checkbox" name="basse" id="checkbox" value="basse">
+                        <label for="basse">Slappa da bass!</label>
+                        <input type="checkbox" name="guitare" id="guitare" value="guitare">
+                        <label for="guitare">Tocard de grateux!</label>
+                        <input type="checkbox" name="batterie" id="batterie" value="batterie">
+                        <label for="batterie">Poum tchak!</label>
+                    </div>
+                    <p class="question">Commentaires supplémentaires</p>
+                    <textarea name="name" rows="8" cols="40">coucoucoucc</textarea>
+                </fieldset>
+                <button type="submit">Envoyer votre message</button>
+            </form>
             <div class="containglobalcode">
                 <!--Nom de la class a voir avec Julien -->
                 <div class="containerhtml">
@@ -321,10 +325,17 @@
         <section id="buttons">
             <h3> Les Boutons </h3>
             <!-- Add Buttons -->
-            <p> Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor? Hodor hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor,
-                hodor; hodor hodor; hodor hodor hodor hodor!
-                <button Class="btn" type="button" name="button">Cliquez ici</button>
+            <p> Ci-dessous vous trouverez les boutons: <br><br>
+              Un bouton neutre avec un border gris, un background-color gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité et un cursor: pointer.<br><br>
+              Ajoutez la classe "vld" afin de changer la couleur de background en vert.<br><br>
+              Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
             </p>
+            <div class="containbtn">
+              <button class="btn" type="button" name="button">Cliquez ici</button>
+              <button class="btn vld" type="button" name="button">Valider</button>
+              <button class="btn anl" type="button" name="button">Annuler</button>
+            </div>
+
             <div class="containglobalcode">
                 <!--Nom de la class a voir avec Julien -->
                 <div class="containerhtml">

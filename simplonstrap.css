@@ -471,17 +471,27 @@ ol {}
 /* -----------------------------------------------Buttons */
 
 .btn {
-    padding: 8px 15px;
-    border: none;
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
     border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    background-color: rgba(244, 245, 247, 0.7);
+    cursor: pointer;
 }
 
-.btn:active {
+.btn.vld {
+    background-color: rgb(150, 211, 160);
+}
+
+.btn.anl {
+    background-color: rgba(244, 75, 66, 0.7);
+}
+
+.btn:active, .btn.vld:active, .btn.anl:active {
     box-shadow: inset 1px 1px 5px grey;
 }
 
-.btn:focus {
+.btn:focus, .btn.vld:focus, .btn.anl:focus{
     outline: none;
 }
 
