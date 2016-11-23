@@ -64,12 +64,84 @@
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Html </h4>
                     <code>
+
+&ltdiv style="width: 600px; height: 600px; border: 1px solid black;" class="containflex"&gt
+
+    &ltdiv style="background-color: red; padding: 16px;" class="colflexnorm"&gt
+
+        &ltdiv style="background-color: blue; margin: 6px;" class="coltiny"&gt
+
+        &lt/div&gt
+        &ltdiv style="background-color: blue; margin: 6px;" class="colmedium"&gt
+
+        &lt/div&gt
+        &ltdiv style="background-color: blue; margin: 6px;" class="colbig"&gt
+
+        &lt/div&gt
+
+    &lt/div&gt
+    &ltdiv style="background-color: blue;" class="colnorm"&gt
+
+    &lt/div&gt
+&lt/div&gt
+
             </code>
                 </div>
                 <div class="containercss">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
+/* -----------------------------------------------Grid */
+
+.containflex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.colnorm {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.coltiny {
+  flex: 0.5;
+  box-sizing: border-box;
+}
+
+.colmedium {
+  flex: 2;
+  box-sizing: border-box;
+}
+
+.colbig {
+  flex: 4;
+  box-sizing: border-box;
+}
+
+.colflexnorm {
+  display: flex;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.colflextiny {
+  display: flex;
+  flex: 0.5;
+  box-sizing: border-box;
+  }
+
+.colflexmedium {
+  display: flex;
+  flex: 2;
+  box-sizing: border-box;
+}
+
+.colflexbig {
+  display: flex;
+  flex: 4;
+  box-sizing: border-box;
+}
+
             </code>
                 </div>
             </div>

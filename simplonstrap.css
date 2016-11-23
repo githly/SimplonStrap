@@ -317,32 +317,15 @@ ol {}
 
 /* -----------------------------------------------Grid */
 
-
-/*"containflex" allows grid's initialization.
-           Grid's size takes Div's size.*/
-
 .containflex {
     display: flex;
     box-sizing: border-box;
 }
 
-
-/*"colnorm" makes a flex column that adapts to the number
-             of columns you will put in "containflex".
-             It gives the same size for all columns*/
-
 .colnorm {
     flex: 1;
     box-sizing: border-box;
 }
-
-
-/*There are 3 columns with defined sizes:
-              "coltiny": will always be smaller
-               than the rest.
-              "colmedium": will have an average size
-               compared to others.
-              "colbig": will always be bigger*/
 
 .coltiny {
     flex: 0.5;
@@ -358,9 +341,6 @@ ol {}
     flex: 4;
     box-sizing: border-box;
 }
-
-
-/* With "colflex" you can also put columns in other columns */
 
 .colflexnorm {
     display: flex;
