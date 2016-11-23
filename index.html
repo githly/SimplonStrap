@@ -79,10 +79,13 @@
         <section id="form">
             <h3> Le Formulaire </h3>
             <!-- Add Form -->
-            <p> Voici donc le formulaire, très simple et modulable à souhait. Vous remarquerez le design flat afin d'améliorer la lisibilité. <br><br> Pour obtenir ce formulaire pré-formaté, il suffit d'attribuer la classe "form" à votre formulaire. <br><br>                La balise form n'a pas de bordure mais un border radius afin d'alléger le design. <br><br> Les Fieldset ont une bordure grise toute simple, un text-align:center est appliqué afin de centrer son contenu.<br><br> Les legend sont en italique
-                avec un text-align: left.<br><br> Les label sont en inline-block afin de pouvoir utiliser un text-align:left tout en leur attribuant une width.<br> Vous remarquerez qu'ils sont également en bold afin d'améliorer leur lisibilité.<br><br>                Les imput ont un padding de 5px, toujours pour améliorer la lisibilité. Leur width est fixée à 40% du parent. <br> Vous noterez que les input de type radio et checkbox ont une width:auto afin d'etre au plus près de leurs labels respectifs.<br><br>                Une transition de 0.5s a été ajoutée sur le focus des input, toujours afin de rentre le visuel plus agréable.<br> Les balises textarea sont quant à elles d'une width de 40% afin d'etre en accord avec les input <br><br> La balise select
-                à été egalement remodelée très légèrement avec une width de 40% (toujours pour la même raison) et un border de la même couleur que les input. <br><br> Enfin concernant le button, la bordure a été enlevée, un background-color vert ajouté,
-                une petite box shadow appliquée de manière très légère et la couleur du texte changé en blanc.<br> Lorsque ce bouton est activé, un box shadow en inset est appliqué afin de donner un effet de bouton qui "s'enfonce". <br>
+            <p> Voici donc le formulaire, très simple et modulable à souhait. Vous remarquerez le design flat afin d'améliorer la lisibilité. <br><br> Pour obtenir ce formulaire pré-formaté, il suffit d'attribuer la classe "form" à votre formulaire. <br><br>                La balise form n'a pas de bordure mais un border radius afin d'alléger le design, un léger box-shadow a été ajouté afin de bien le distinguer dans le DOM. <br><br> Les Fieldset ont une bordure grise toute simple, un text-align:center est
+                appliqué afin de centrer son contenu.<br><br> Les legend sont en italique avec un text-align: left.<br><br> Les label sont en inline-block afin de pouvoir utiliser un text-align:left tout en leur attribuant une width.<br> Vous remarquerez
+                qu'ils sont également en bold afin d'améliorer leur lisibilité.<br><br> Les imput ont un padding de 5px, toujours pour améliorer la lisibilité. Leur width est fixée à 40% du parent. <br> Vous noterez que les input de type radio et checkbox
+                ont une width:auto afin d'etre au plus près de leurs labels respectifs.<br><br> Une transition de 0.5s a été ajoutée sur le focus des input, toujours afin de rentre le visuel plus agréable.<br> Les balises textarea sont quant à elles d'une
+                width de 40% afin d'etre en accord avec les input. <br><br> La balise select à été egalement remodelée très légèrement avec une width de 40% (toujours pour la même raison) et un border de la même couleur que les input. <br><br> Enfin concernant
+                le button, la bordure a été enlevée, un background-color vert ajouté, une petite box shadow appliquée de manière très légère et la couleur du texte changé en blanc.<br> Lorsque ce bouton est activé, un box shadow en inset est appliqué
+                afin de donner un effet de bouton qui "s'enfonce". <br>
 
             </p>
             <form class="form" action="index.html" method="post">
@@ -158,7 +161,7 @@
                     <p class="question">Commentaires supplémentaires</p>
                     <textarea name="name" rows="8" cols="40">coucoucoucc</textarea>
                 </fieldset>
-                <button type="submit">Envoyer votre message</button>
+                <button type="submit">Envoyer</button>
             </form>
             <div class="containglobalcode">
                 <!--Nom de la class a voir avec Julien -->
@@ -239,7 +242,7 @@
                     &ltp class="question"&gtCommentaires supplémentaires&lt/p&gt
                     &lttextarea name="name" rows="8" cols="40"&gt&lt/textarea&gt
                 &lt/fieldset&gt
-                &ltbutton type="submit"&gtEnvoyer votre message&lt/button&gt
+                &ltbutton type="submit"&gtEnvoyer&lt/button&gt
               &lt/form&gt
             </code>
                 </div>
@@ -253,6 +256,7 @@
                   border-radius: 10px;
                   background-color: #EEEEEE;
                   font-family: serif;
+                  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
               }
 
               .form label {
@@ -306,18 +310,134 @@
               }
 
               .form button {
-                  border-radius: 10px;
-                  padding: 5px;
-                  background-color: #4CAF50;
-                  color: white;
-                  margin: 5px;
+                  padding: 8px 0px;
+                  width: 100px;
+                  border: 1px solid #CCCCCC;
+                  border-radius: 5px;
+                  background: radial-gradient(#98FB98, #32CD32);
+                  cursor: pointer;
               }
 
               .form .question {
                   text-align: left;
                   margin-top: 20px;
               }
-            </code>
+                  </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="tableau">
+            <h3> Le Tableau </h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Attribut</th>
+                        <th>Valeur</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>.table[margin]</td>
+                        <td>auto</td>
+                        <td>Centre le tableau</td>
+                    </tr>
+                    <tr>
+                        <td>.table[background]</td>
+                        <td>#EEEEEE</td>
+                        <td>Couleur grise de background</td>
+                    </tr>
+                    <tr>
+                        <td>.table[border-collapse]</td>
+                        <td>separate</td>
+                        <td>Sépare les borders afin d'améliorer la lisibilité</td>
+                    </tr>
+                    <tr>
+                        <td>.table[font-size]</td>
+                        <td>0.9em</td>
+                        <td>Diminue un peu la taille du texte</td>
+                    </tr>
+                    <tr>
+                        <td>.table[width]</td>
+                        <td>80%</td>
+                        <td>Définie la largeur à 80%</td>
+                    </tr>
+                    <tr>
+                        <td>.table[text-align]</td>
+                        <td>left</td>
+                        <td>Aligne le texte à gauche</td>
+                    </tr>
+                    <tr>
+                        <td>.table[box-shadow]</td>
+                        <td>0 0 10px 0 rgba(0, 0, 0, .3)</td>
+                        <td>Applique une ombre très légère tout autour du tableau</td>
+                    </tr>
+                    <tr>
+                        <td>th[font-weight]</td>
+                        <td>bold</td>
+                        <td>Met la police des cellules du head du tableau en gras</td>
+                    </tr>
+                    <tr>
+                        <td>th[padding]</td>
+                        <td>10px 15px</td>
+                        <td>Padding améliorant la lisibilité</td>
+                    </tr>
+                    <tr>
+                        <td>th[color]</td>
+                        <td>#fff</td>
+                        <td>Couleur de police blanche</td>
+                    </tr>
+                    <tr>
+                        <td>th[background]</td>
+                        <td>linear-gradient(#777, #444)</td>
+                        <td>Background en dégradé</td>
+                    </tr>
+                    <tr>
+                        <td>td[border]</td>
+                        <td>1px solid #fff</td>
+                        <td>Bordure blanche</td>
+                    </tr>
+                    <tr>
+                        <td>tbody tr td:first-child[font-weight]</td>
+                        <td>bold</td>
+                        <td>Met en gras la première cellule de chaque ligne</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="containglobalcode">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="containercss">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+                      .table {
+                      	background: #EEEEEE;
+                      	border-collapse: separate;
+                        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+                      	font-size: 0.9em;
+                      	margin: auto;
+                      	text-align: left;
+                      	width: 80%;
+                      }
+
+                      .table th {
+                      	background: linear-gradient(#777, #444);
+                      	color: #fff;
+                        font-weight: bold;
+                      	padding: 10px 15px;
+                      }
+
+                      .table td {
+                      	border: 1px solid #fff;
+                      	padding: 10px 15px;
+                      }
+
+                      .table tbody tr td:first-child {
+                        font-weight: bold;
+                      }
+
+                    </code>
                 </div>
             </div>
         </section>
@@ -325,31 +445,35 @@
         <section id="buttons">
             <h3> Les Boutons </h3>
             <!-- Add Buttons -->
-            <p> Ci-dessous vous trouverez les boutons: <br><br> Un bouton neutre avec un border gris, un background-color gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité, un cursor: pointer,<br> une suppression de l'outline lors d'un focus et enfin un shadow inset afin de donner une impression "d'enfoncer" le bouton quand il est activé.<br><br> Ajoutez
-                la classe "vld" afin de changer la couleur de background en vert.<br><br> Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
+            <p> Ci-dessous vous trouverez les boutons: <br><br> Un bouton neutre, attribuez la class .btn, avec un border gris, un background en radial-gradient gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité,
+                un cursor: pointer,<br> une suppression de l'outline lors d'un focus et enfin un shadow inset afin de donner une impression "d'enfoncer" le bouton quand il est activé.<br><br> Ajoutez la classe "vld" afin de changer la couleur de background
+                en vert.<br><br> Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
             </p>
             <div class="containbtn">
                 <button class="btn" type="button" name="button">Cliquez ici</button>
                 <button class="btn vld" type="button" name="button">Valider</button>
                 <button class="btn anl" type="button" name="button">Annuler</button>
             </div>
-            <h4> Le Css </h4>
-            <code>
+            <div class="containglobalcode">
+                <div class="containercss">
+                    <h4> Le Css </h4>
+
+                    <code>
               .btn {
                   padding: 8px 0px;
                   width: 100px;
                   border: 1px solid #CCCCCC;
                   border-radius: 5px;
-                  background-color: rgba(244, 245, 247, 0.7);
+                  background: radial-gradient(#EEEEEE, #CCCCCC);
                   cursor: pointer;
               }
 
               .btn.vld {
-                  background-color: rgb(150, 211, 160);
+                  background:radial-gradient(#7FFF00, #32CD32);
               }
 
               .btn.anl {
-                  background-color: rgba(244, 75, 66, 0.7);
+                  background:radial-gradient(#FF0000, #CF0A1D);
               }
 
               .btn:active {
@@ -359,20 +483,8 @@
               .btn:focus {
                   outline: none;
               }
-            </code>
-            <div class="containglobalcode">
-                <!--Nom de la class a voir avec Julien -->
-                <div class="containerhtml">
-                    <!--Nom de la class a voir avec Julien -->
-                    <h4> Le Html </h4>
-                    <code>
-            </code>
-                </div>
-                <div class="containercss">
-                    <!--Nom de la class a voir avec Julien -->
-                    <h4> Le Css </h4>
-                    <code>
-            </code>
+
+                  </code>
                 </div>
             </div>
         </section>

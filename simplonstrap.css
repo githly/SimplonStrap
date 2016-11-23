@@ -215,6 +215,7 @@ ol {}
 
 /*** Nav ***/
 
+
 /** NAV BAR Instructions
     * The text will be transformed in Uppercase and aligned center,
     * There'll be 3 sizes to choosefrom,
@@ -335,6 +336,7 @@ ol {}
     box-sizing: border-box;
 }
 
+
 /*There are 3 columns with defined sizes:
               "coltiny": will always be smaller
                than the rest.
@@ -393,6 +395,7 @@ ol {}
     border-radius: 10px;
     background-color: #EEEEEE;
     font-family: serif;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 }
 
 .form label {
@@ -446,12 +449,12 @@ ol {}
 }
 
 .form button {
-    border: none;
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
     border-radius: 5px;
-    padding: 8px 15px;
-    background-color: #4CAF50;
-    color: white;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    background: radial-gradient(#98FB98, #32CD32);
+    cursor: pointer;
 }
 
 .form button:active {
@@ -468,6 +471,35 @@ ol {}
 }
 
 
+/* -----------------------------------------------Tableaux */
+
+.table {
+    background: #EEEEEE;
+    border-collapse: separate;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+    font-size: 0.9em;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+
+.table th {
+    background: linear-gradient(#777, #444);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.table td {
+    border: 1px solid #fff;
+    padding: 10px 15px;
+}
+
+.table tbody tr td:first-child {
+    font-weight: bold;
+}
+
+
 /* -----------------------------------------------Buttons */
 
 .btn {
@@ -475,16 +507,16 @@ ol {}
     width: 100px;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
-    background-color: rgba(244, 245, 247, 0.7);
+    background: radial-gradient(#EEEEEE, #CCCCCC);
     cursor: pointer;
 }
 
 .btn.vld {
-    background-color: rgb(150, 211, 160);
+    background: radial-gradient(#98FB98, #32CD32);
 }
 
 .btn.anl {
-    background-color: rgba(244, 75, 66, 0.7);
+    background: radial-gradient(#FF0000, #CF0A1D);
 }
 
 .btn:active {

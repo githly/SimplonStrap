@@ -13,6 +13,7 @@ code {
   border-radius: 0.4em;
   white-space: pre;
   font-size: 0.7vw;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
 
 section p {
