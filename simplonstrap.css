@@ -530,7 +530,10 @@ ol {}
 
 /* -----------------------------------------------Media Queries */
 
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 800px) {
+    body {
+      margin: 0;
+    }
     /*------------------------------------------------Form*/
     .form {
         margin: 0;
@@ -559,5 +562,9 @@ ol {}
     }
     .form button {
         padding: 10px;
+    }
+    /*------------------------------------------------Tableau*/
+    .table {
+        font-size: 1.7vh;
     }
 }
