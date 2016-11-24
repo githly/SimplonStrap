@@ -446,7 +446,6 @@ ol {}
 }
 
 .form button {
-    float: right;
     border: none;
     border-radius: 5px;
     padding: 8px 15px;
@@ -472,10 +471,20 @@ ol {}
 /* -----------------------------------------------Buttons */
 
 .btn {
-    padding: 8px 15px;
-    border: none;
+    padding: 8px 0px;
+    width: 100px;
+    border: 1px solid #CCCCCC;
     border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    background-color: rgba(244, 245, 247, 0.7);
+    cursor: pointer;
+}
+
+.btn.vld {
+    background-color: rgb(150, 211, 160);
+}
+
+.btn.anl {
+    background-color: rgba(244, 75, 66, 0.7);
 }
 
 .btn:active {

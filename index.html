@@ -36,13 +36,13 @@
           hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor...
           Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
           hodor hodor; hodor hodor hodor hodor! </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+        <div class="containflex"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"> <!--Nom de la class a voir avec Julien -->
             <h4> Le Html </h4>
             <code>
             </code>
           </div>
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"><!--Nom de la class a voir avec Julien -->
             <h4> Le Css </h4>
             <code>
             </code>
@@ -57,13 +57,13 @@
         "colnorm" créer une colonne qui adapte ça taille aux nombres de colonnes placer dans le "containflex".
         "colnorm" donne donc la même taille à toutes les divs. Vous pouvez aussi choisir des tailles : petit, moyen ou grand avec "coltiny", "colmedium" et "colbig". Vous disposez aussi de colonne "flex" qui permette de mettre des colonnes dans des colonnes car elles font office de container.
         </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+        <div class="containflex"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"> <!--Nom de la class a voir avec Julien -->
             <h4> Le Html </h4>
             <code>
             </code>
           </div>
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"><!--Nom de la class a voir avec Julien -->
             <h4> Le Css </h4>
             <code>
             </code>
@@ -73,45 +73,298 @@
     </main>
     <hr></hr>
     <aside role="complementary">
-      <section id="form">
-        <h3> Le Formulaire </h3>
-        <!-- Add Form -->
-        <p> Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor? Hodor
-          hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor
-          hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor...
-          Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor; hodor hodor hodor hodor! </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
-            <h4> Le Html </h4>
-            <code>
+        <section id="form">
+            <h3> Le Formulaire </h3>
+            <!-- Add Form -->
+            <p> Voici donc le formulaire, très simple et modulable à souhait. Vous remarquerez le design flat afin d'améliorer la lisibilité. <br><br> Pour obtenir ce formulaire pré-formaté, il suffit d'attribuer la classe "form" à votre formulaire. <br><br>                La balise form n'a pas de bordure mais un border radius afin d'alléger le design. <br><br> Les Fieldset ont une bordure grise toute simple, un text-align:center est appliqué afin de centrer son contenu.<br><br> Les legend sont en italique
+                avec un text-align: left.<br><br> Les label sont en inline-block afin de pouvoir utiliser un text-align:left tout en leur attribuant une width.<br> Vous remarquerez qu'ils sont également en bold afin d'améliorer leur lisibilité.<br><br>                Les imput ont un padding de 5px, toujours pour améliorer la lisibilité. Leur width est fixée à 40% du parent. <br> Vous noterez que les input de type radio et checkbox ont une width:auto afin d'etre au plus près de leurs labels respectifs.<br><br>                Une transition de 0.5s a été ajoutée sur le focus des input, toujours afin de rentre le visuel plus agréable.<br> Les balises textarea sont quant à elles d'une width de 40% afin d'etre en accord avec les input <br><br> La balise select
+                à été egalement remodelée très légèrement avec une width de 40% (toujours pour la même raison) et un border de la même couleur que les input. <br><br> Enfin concernant le button, la bordure a été enlevée, un background-color vert ajouté,
+                une petite box shadow appliquée de manière très légère et la couleur du texte changé en blanc.<br> Lorsque ce bouton est activé, un box shadow en inset est appliqué afin de donner un effet de bouton qui "s'enfonce". <br>
+
+            </p>
+            <form class="form" action="index.html" method="post">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+
+                    <label for="sexe">Votre Titre</label>
+                    <select class="sexe" name="sexe">
+                      <option value="option">Monsieur</option>
+                      <option value="option">Madame</option>
+                      <option value="option">Seigneur</option>
+                      <option value="option">Lord</option>
+                    </select>
+
+                    <div>
+                        <label for="prenom">Prénom </label>
+                        <input type="text" name="firstname" id="prenom">
+                    </div>
+                    <div>
+                        <label for="nom">Nom </label>
+                        <input type="text" name="name" id="nom">
+                    </div>
+                    <div>
+                        <label for="adress1">Adresse 1 </label>
+                        <input type="text" name="adresse1" id="adress1">
+                    </div>
+                    <div>
+                        <label for="adress2">Adresse 2 </label>
+                        <input type="text" name="adresse2" id="adress2">
+                    </div>
+                    <div>
+                        <label for="postal">Code postal </label>
+                        <input type="text" name="postal" id="postal" maxlength="5">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com">
+                    </div>
+                    <div>
+                        <label for="tel">Téléphone </label>
+                        <input type="tel" name="tel" id="tel" maxlength="10">
+                    </div>
+                    <div>
+                        <label for="date">Date de naissance</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="url">Skyblog </label>
+                        <input type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/">
+                    </div>
+                </fieldset>
+
+                <fieldset id="f2">
+                    <legend>Comment avez-vous connu ce site?</legend>
+                    <p class="question">Comment avez-vous connu ce site?</p>
+                    <div id="r1">
+                        <input type="radio" name="radio" id="internet" value="Internet">
+                        <label for="internet">Internet</label>
+                        <input type="radio" name="radio" id="journal" value="Journal papier">
+                        <label for="journal">Journal Papier</label>
+                        <input type="radio" name="radio" id="bouche" value="Bouche">
+                        <label for="bouche">Bouche à oreille</label>
+                    </div>
+                    <p class="question">De quel instrument jouez vous?</p>
+                    <div id="r2">
+                        <input type="checkbox" name="basse" id="checkbox" value="basse">
+                        <label for="basse">Slappa da bass!</label>
+                        <input type="checkbox" name="guitare" id="guitare" value="guitare">
+                        <label for="guitare">Tocard de grateux!</label>
+                        <input type="checkbox" name="batterie" id="batterie" value="batterie">
+                        <label for="batterie">Poum tchak!</label>
+                    </div>
+                    <p class="question">Commentaires supplémentaires</p>
+                    <textarea name="name" rows="8" cols="40">coucoucoucc</textarea>
+                </fieldset>
+                <button type="submit">Envoyer votre message</button>
+            </form>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Html </h4>
+                    <code>
+              &ltform class="form" action="index.html" method="post"&gt
+                &ltfieldset&gt
+                    &ltlegend&gtInformations personnelles&lt/legend&gt
+
+                    &ltlabel for="sexe"&gtVotre Titre&lt/label&gt
+                    &ltselect class="sexe" name="sexe"&gt
+                          &ltoption value="option"&gtMonsieur&lt/option&gt
+                          &ltoption value="option"&gtMadame&lt/option&gt
+                          &ltoption value="option"&gtSeigneur&lt/option&gt
+                          &ltoption value="option"&gtLord&lt/option&gt
+                        &lt/select&gt
+
+                    &ltdiv&gt
+                        &ltlabel for="prenom"&gtPrénom &lt/label&gt
+                        &ltinput type="text" name="firstname" id="prenom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="nom"&gtNom &lt/label&gt
+                        &ltinput type="text" name="name" id="nom"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress1"&gtAdresse 1 &lt/label&gt
+                        &ltinput type="text" name="adresse1" id="adress1"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="adress2"&gtAdresse 2 &lt/label&gt
+                        &ltinput type="text" name="adresse2" id="adress2"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="postal"&gtCode postal &lt/label&gt
+                        &ltinput type="text" name="postal" id="postal" maxlength="5"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="email"&gtEmail&lt/label&gt
+                        &ltinput type="email" name="mail" id="mail" placeholder="ex:john.doe@mail.com"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="tel">Téléphone &lt/label&gt
+                        &ltinput type="tel" name="tel" id="tel" maxlength="10"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="date">Date de naissance&lt/label&gt
+                        &ltinput type="date" name="date" id="date"&gt
+                    &lt/div&gt
+                    &ltdiv&gt
+                        &ltlabel for="url">Skyblog &lt/label&gt
+                        &ltinput type="url" name="name" id="url" placeholder="http://tocard.skyrock.com/"&gt
+                    &lt/div&gt
+                &lt/fieldset&gt
+
+                &ltfieldset id="f2"&gt
+                    &ltlegend&gtComment avez-vous connu ce site?&lt/legend&gt
+                    &ltp class="question"&gtComment avez-vous connu ce site?&lt/p&gt
+                    &ltdiv id="r1"&gt
+                        &ltinput type="radio" name="radio" id="internet" value="Internet"&gt
+                        &ltlabel for="internet"&gtInternet&lt/label&gt
+                        &ltinput type="radio" name="radio" id="journal" value="Journal papier"&gt
+                        &ltlabel for="journal"&gtJournal Papier&lt/label&gt
+                        &ltinput type="radio" name="radio" id="bouche" value="Bouche"&gt
+                        &ltlabel for="bouche"&gtBouche à oreille&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtDe quel instrument jouez vous?&lt/p&gt
+                    &ltdiv id="r2"&gt
+                        &ltinput type="checkbox" name="basse" id="checkbox" value="basse"&gt
+                        &ltlabel for="basse"&gtSlappa da bass!&lt/label&gt
+                        &ltinput type="checkbox" name="guitare" id="guitare" value="guitare"&gt
+                        &ltlabel for="guitare"&gtTocard de grateux!&lt/label&gt
+                        &ltinput type="checkbox" name="batterie" id="batterie" value="batterie"&gt
+                        &ltlabel for="batterie"&gtPoum tchak!&lt/label&gt
+                    &lt/div&gt
+                    &ltp class="question"&gtCommentaires supplémentaires&lt/p&gt
+                    &lttextarea name="name" rows="8" cols="40"&gt&lt/textarea&gt
+                &lt/fieldset&gt
+                &ltbutton type="submit"&gtEnvoyer votre message&lt/button&gt
+              &lt/form&gt
             </code>
+                </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Css </h4>
+                    <code>
+              .form {
+                  margin: 5px 10%;
+                  padding: 2%;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  font-family: serif;
+              }
+
+              .form label {
+                  display: inline-block;
+                  min-width: 25%;
+                  text-align: left;
+                  font-weight: bold;
+              }
+
+              .form fieldset {
+                  margin: 10px;
+                  border-radius: 10px;
+                  background-color: #EEEEEE;
+                  border: 1px solid #DDDDDD;
+                  text-align: center;
+                  padding: 5%;
+              }
+
+              .form legend {
+                  font-style: italic;
+                  text-align: left;
+              }
+
+              .form input {
+                  border-radius: 3px;
+                  margin: 1% 0px;
+                  width: 40%;
+                  padding: 5px;
+                  border: 1px solid #CCCCCC;
+              }
+
+              .form input[type="radio"], input[type="checkbox"] {
+                  width: auto;
+                  margin: 5px 5px;
+              }
+
+              .form input:focus {
+                  transition: 0.5s;
+              }
+
+              .form textarea {
+                  width: 40%;
+                  height: 10vh;
+                  margin: 5px;
+              }
+
+              .form select {
+                  border: 1px solid #CCCCCC;
+                  padding: 5px;
+                  width: 40%;
+              }
+
+              .form button {
+                  border-radius: 10px;
+                  padding: 5px;
+                  background-color: #4CAF50;
+                  color: white;
+                  margin: 5px;
+              }
+
+              .form .question {
+                  text-align: left;
+                  margin-top: 20px;
+              }
+            </code>
+                </div>
+            </div>
+        </section>
+        <hr></hr>
+        <section id="buttons">
+            <h3> Les Boutons </h3>
+            <!-- Add Buttons -->
+            <p> Ci-dessous vous trouverez les boutons: <br><br> Un bouton neutre avec un border gris, un background-color gris très léger, une width de 100px, un padding vertical de 8px afin d'ameliorer la lisibilité, un cursor: pointer,<br> une suppression de l'outline lors d'un focus et enfin un shadow inset afin de donner une impression "d'enfoncer" le bouton quand il est activé.<br><br> Ajoutez
+                la classe "vld" afin de changer la couleur de background en vert.<br><br> Ajoutez la classe "anl" afin de changer la couleur de background en rouge. <br><br>
+            </p>
+            <div class="containbtn">
+                <button class="btn" type="button" name="button">Cliquez ici</button>
+                <button class="btn vld" type="button" name="button">Valider</button>
+                <button class="btn anl" type="button" name="button">Annuler</button>
+            </div>
+            <div class="containflex">
+                <!--Nom de la class a voir avec Julien -->
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le Html </h4>
+                    <code>
+                    </code>
           </div>
-          <div class="containerhtml"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"><!--Nom de la class a voir avec Julien -->
             <h4> Le Css </h4>
             <code>
-            </code>
-          </div>
-        </div>
-      </section>
-      <hr></hr>
-      <section id="buttons">
-        <h3> Les Boutons </h3>
-        <!-- Add Buttons -->
-        <p> Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor? Hodor
-          hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor
-          hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor...
-          Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor; hodor hodor hodor hodor! </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
-            <h4> Le Html </h4>
-            <code>
-            </code>
-          </div>
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
-            <h4> Le Css </h4>
-            <code>
+              .btn {
+                  padding: 8px 0px;
+                  width: 100px;
+                  border: 1px solid #CCCCCC;
+                  border-radius: 5px;
+                  background-color: rgba(244, 245, 247, 0.7);
+                  cursor: pointer;
+              }
+
+              .btn.vld {
+                  background-color: rgb(150, 211, 160);
+              }
+
+              .btn.anl {
+                  background-color: rgba(244, 75, 66, 0.7);
+              }
+
+              .btn:active {
+                  box-shadow: inset 1px 1px 5px grey;
+              }
+
+              .btn:focus {
+                  outline: none;
+              }
             </code>
           </div>
         </div>
@@ -121,8 +374,8 @@
         <h3> Le Reset User Agent </h3>
         <!-- Add Reset User Agent -->
         <p> Le Reset User Agent permet de réinitialiser les paramètres d'affichage par défaut du navigateur que l'on ne souhaite pas conserver dans notre code </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+        <div class="containflex"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"><!--Nom de la class a voir avec Julien -->
             <h4> Le Css </h4>
             <code>
               /* -----------------------------------------------Reset User Agent */
@@ -148,8 +401,8 @@
         <!-- Add Helper Class -->
         <p> Les Helper Class sont des classes qui permettent d'accellerer votre vitesse de production.
           <br>Nous en avons construit plusieurs types : Position, Display, Cacher un élément, etc etc </p>
-        <div class="containglobalcode"><!--Nom de la class a voir avec Julien -->
-          <div class="containerhtml"> <!--Nom de la class a voir avec Julien -->
+        <div class="containflex"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"> <!--Nom de la class a voir avec Julien -->
             <h4> Les Positions et Display </h4>
             <code>
               /*** Positions ***/
@@ -190,7 +443,7 @@
               }
             </code>
           </div>
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm"><!--Nom de la class a voir avec Julien -->
             <h4> Cacher un élément  </h4>
             <code>
 /*** Hide Elements ***/
@@ -213,7 +466,28 @@
 }
             </code>
           </div>
-          <div class="containercss"><!--Nom de la class a voir avec Julien -->
+          <div class="colnorm">
+            <h4> Divers  </h4>
+            <code>
+/*** Float ***/
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+.floatn {
+  float: none;
+}
+
+.floatfix {
+  clear: both;
+}
+            </code>
+          </div>
+          <div class="colnorm">
             <h4> Divers  </h4>
             <code>
 /*** Float ***/
