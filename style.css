@@ -9,10 +9,15 @@ header {
 
 
 code {
-  padding: 5%;
-  border-radius: 0.4em;
-  white-space: pre;
-  font-size: 0.7vw;
+    padding: 2%;
+    display: block;
+    background: #3F3F3F;
+    color: white;
+    border-radius: 0.4em;
+    white-space:  pre;
+    font-size: 0.8vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	  height:100%;
 }
 
 section p {
@@ -25,11 +30,17 @@ hr {
 }
 
 footer {
+  padding:2%;
   background: #dedede;
 }
 
 footer section {
   padding: 1%;
+  width: 33%;
+}
+
+footer p {
+    text-align: center;
 }
 
 /*** Titles Structures Styles ***/
@@ -75,7 +86,16 @@ h4 {
   text-align: center;
 }
 
+/* Media Queries */
 
-footer section {
-  width: 33%;
+@media screen and (max-width: 800px) {
+  .containflex {
+    flex-direction: column;
+  }
+  code {
+    font-size: 1vh;
+  }
+  .input {
+    width:110px;
+  }
 }
