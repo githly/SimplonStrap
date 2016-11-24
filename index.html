@@ -16,38 +16,175 @@
         <h2> The Best CSS Framework Forever and ever</h2>
         <!-- Add Navigation Bar-->
         <nav class="nav" role="navigation">
-            <ul>
-                <li><a href="#">Hamburger</a></li>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#menu">Navigation</a></li>
-                <li><a href="#grid">Grille</a></li>
-                <li><a href="#form">Formulaire</a></li>
-                <li><a href="#tableau">Tableau</a></li>
-                <li><a href="#buttons">Boutons</a></li>
-                <li><a href="#reset">Reset</a></li>
-                <li><a href="#helper">Helper Class</a></li>
-                <li><a href="#contact">Contact</a></li>
+			<ul>
+				<div id="hamburger">
+					<div id="navico">
+						<a href="#">
+							<span class="icon-menu" aria-hidden="true"></span>
+							<span class="visuallyhidden">Menu</span>
+						</a>
+					</div>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#menu">Navigation</a></li>
+					<li><a href="#grid">Grille</a></li>
+					<li><a href="#form">Formulaire</a></li>
+					<li><a href="#tableau">Tableau</a></li>
+					<li><a href="#buttons">Boutons</a></li>
+					<li><a href="#reset">Reset</a></li>
+					<li><a href="#helper">Helper Class</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</div>
             </ul>
-        </nav>
+		</nav>
     </header>
     <main>
         <section id="menu">
-            <h3> Les Barres de Navigation </h3>
+            <h3> La Barre de Navigation </h3>
             <!-- Add Menu -->
-            <p> Hodor, hodor. Hodor. Hodor, hodor... Hodor hodor hodor? Hodor hodor hodor hodor - hodor hodor! Hodor hodor - hodor hodor hodor hodor hodor? Hodor, HODOR hodor, hodor hodor - hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor,
-                hodor; hodor hodor; hodor hodor hodor hodor! </p>
-            <div class="containglobalcode">
+            <p> Notre barre de navigation vous permettra d'acquérir un menu Hamburger responsive !<br/></p>
+			<h5 class="centert">Sa construction </h5><br/>
+			<p>Un container doté de la classe .nav pour l'adaptation à n'importe quel type de menu et non uniquement une barre de navigation <br/>
+			On initialise ensuite une liste à puce avec la balise ul comprenant les divers éléments du menu <br/>
+			On ajoute un second container avec un id hamburger qui permettra le declenchement du déroulement du menu en hover<br/>
+			On ajoute un troisième container avec un id Navico qui engloble l'icone de l'hamburger en lui même et une largeur égale à celle de son parent pour une meilleure accessibilité du déroulement sur mobile<br/>
+			On crée ensuite les différents liens du menu entre les balises li de la liste à puce <br/>
+			<h5 class="centert">Le responsive</h5><br/>
+			<p>L'adaptabilité du menu est geré par des media queries à definir en fonction de votre design personel<br/>
+			- Sur Desktop : <br/>
+			Par défaut, nous avons fait le choix de cacher l'icone Hamburger. Les éléments de la liste sont sous la forme d'inline-block.<br/>
+			- Sur Mobile : <br/>
+			Les éléments des listes sont cette fois ci affiché en tant que block et restent cliquables sur la totalité de la largeur de l'ecran
+			</p>
+			<nav class="nav" role="navigation">
+				<ul>
+					<div id="hamburger">
+						<div id="navico">
+							<a href="#">
+								<span class="icon-menu" aria-hidden="true"></span>
+								<span class="visuallyhidden">Menu</span>
+							</a>
+						</div>
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#menu">Navigation</a></li>
+						<li><a href="#grid">Grille</a></li>
+						<li><a href="#form">Formulaire</a></li>
+						<li><a href="#tableau">Tableau</a></li>
+						<li><a href="#buttons">Boutons</a></li>
+						<li><a href="#reset">Reset</a></li>
+						<li><a href="#helper">Helper Class</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</div>
+				</ul>
+			</nav>
+            <div class="containflex">
                 <!--Nom de la class a voir avec Julien -->
-                <div class="containerhtml">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Html </h4>
                     <code>
+                      &ltnav class="nav" role="navigation"&gt
+                      &ltul&gt
+                      &ltdiv id="hamburger"&gt
+                        &ltdiv id="navico"&gt
+                          &lta href="#"&gt
+                            &ltspan class="icon-menu" aria-hidden="true"&gt&lt/span&gt
+                            &ltspan class="visuallyhidden"&gtMenu&lt/span&gt
+                          &lt/a&gt
+                        &lt/div&gt
+                        &ltli&gt&lta href="#">Accueil&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#menu">Navigation&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#grid">Grille&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#form">Formulaire&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#tableau">Tableau&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#buttons">Boutons&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#reset">Reset&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#helper">Helper Class&lt/a&gt&lt/li&gt
+                        &ltli&gt&lta href="#contact">Contact&lt/a&gt&lt/li&gt
+                      &lt/div&gt
+                          &lt/ul&gt
+                      &lt/nav&gt
             </code>
                 </div>
-                <div class="containercss">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
+/* Navigation Bar*/
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0.3em;
+  background: white;
+}
+
+.nav ul {
+  padding: 2% 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li a {
+  display: inline-block;
+  padding: 0 1%;
+  background: pink;
+  border: 2px solid pink;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: bold;
+}
+
+.nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {
+  color: pink;
+  display: inline-block;
+  padding: 0 1%;
+  background: white;
+  border: 2px solid #dedede;
+  border-radius: 0.3em;
+}
+
+#navico a{
+  color:pink;
+}
+
+#navico a:hover, #navico a:focus, #navico a:active {
+  color: deeppink;
+}
+
+
+/* Navigation Bar Media Queries*/
+
+@media screen and (min-width:868px){
+  #navico {
+    display:none;
+  }
+}
+
+
+
+@media screen and (max-width: 867px) {
+  #navico {
+    display:static;
+    width:100%;
+    font-size:2.5em;
+    color: pink;
+  }
+
+  .nav ul li a{
+    display:none;
+  }
+
+  .nav:hover li a{
+    display: block;
+    width:100%;
+    height:50px;
+    line-height:50px;
+  }
+}
             </code>
                 </div>
             </div>
@@ -56,19 +193,36 @@
         <section id="grid">
             <h3> La Grille </h3>
             <!-- Add Grid -->
+
             <p>
 La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes. "containflex" permet d'initialiser la grille. La taille de la grille prend celle de la div sur laquelle elle est initialisée.
 "colnorm" créer une colonne qui adapte ça taille aux nombres de colonnes placer dans le "containflex".
 "colnorm" donne donc la même taille à toutes les divs. Vous pouvez aussi choisir des tailles : petit, moyen ou grand avec "coltiny", "colmedium" et "colbig". Vous disposez aussi de colonne "flex" qui permette de mettre des colonnes dans des colonnes car elles font office de container.
- </p>
-            <div class="containglobalcode">
+			</p>
+			<div style="height: 600px; border: 1px solid black;" class="containflex">
+
+				<div style="background-color: pink; padding: 16px;" class="colflexnorm">
+
+					<div style="background-color: grey; margin: 6px;" class="coltiny">
+
+					</div>
+					<div style="background-color: grey; margin: 6px;" class="colmedium">
+
+					</div>
+					<div style="background-color: grey; margin: 6px;" class="colbig">
+					</div>
+				</div>
+				<div style="background-color: grey;" class="colnorm">
+				</div>
+			</div>
+            <div class="containflex">
                 <!--Nom de la class a voir avec Julien -->
-                <div class="containerhtml">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Html </h4>
                     <code>
 
-&ltdiv style="width: 600px; height: 600px; border: 1px solid black;" class="containflex"&gt
+&ltdiv style=" height: 600px; border: 1px solid black;" class="containflex"&gt
 
     &ltdiv style="background-color: red; padding: 16px;" class="colflexnorm"&gt
 
@@ -90,7 +244,7 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
 
             </code>
                 </div>
-                <div class="containercss">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
@@ -239,9 +393,9 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
                 </fieldset>
                 <button type="submit">Envoyer</button>
             </form>
-            <div class="containglobalcode">
+            <div class="containflex">
                 <!--Nom de la class a voir avec Julien -->
-                <div class="containerhtml">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Html </h4>
                     <code>
@@ -322,7 +476,7 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
 &lt/form&gt
             </code>
                 </div>
-                <div class="containercss">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
@@ -481,9 +635,90 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
                     </tr>
                 </tbody>
             </table>
-            <div class="containglobalcode">
-                <!--Nom de la class a voir avec Julien -->
-                <div class="containercss">
+            <div class="containflex">
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Le HTML </h4>
+                    <code>
+                      &lttable class="table"&gt
+                        &ltthead&gt
+                          &lttr&gt
+                            &ltth&gtAttribut&lt/th&gt
+                            &ltth&gtValeur&lt/th&gt
+                            &ltth&gtDescription&lt/th&gt
+                          &lt/tr&gt
+                        &lt/thead&gt
+                        &lttbody&gt
+                          &lttr&gt
+                            &lttd&gt.table[margin]&lt/td&gt
+                            &lttd&gtauto&lt/td&gt
+                            &lttd&gtCentre le tableau&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[background]&lt/td&gt
+                            &lttd&gt#EEEEEE&lt/td&gt
+                            &lttd&gtCouleur grise de background&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[border-collapse]&lt/td&gt
+                            &lttd&gtseparate&lt/td&gt
+                            &lttd&gtSépare les borders afin d'améliorer la lisibilité&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[font-size]&lt/td&gt
+                            &lttd&gt0.9em&lt/td&gt
+                            &lttd&gtDiminue un peu la taille du texte&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[width]&lt/td&gt
+                            &lttd&gt80%&lt/td&gt
+                            &lttd&gtDéfinie la largeur à 80%&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[text-align]&lt/td&gt
+                            &lttd&gtleft&lt/td&gt
+                            &lttd&gtAligne le texte à gauche&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gt.table[box-shadow]&lt/td&gt
+                            &lttd&gt0 0 10px 0 rgba(0, 0, 0, .3)&lt/td&gt
+                            &lttd&gtApplique une ombre très légère tout autour du tableau&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gtth[font-weight]&lt/td&gt
+                            &lttd&gtbold&lt/td&gt
+                            &lttd&gtMet la police des cellules du head du tableau en gras&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gtth[padding]&lt/td&gt
+                            &lttd&gt10px 15px&lt/td&gt
+                            &lttd&gtPadding améliorant la lisibilité&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gtth[color]&lt/td&gt
+                            &lttd&gt#fff&lt/td&gt
+                            &lttd&gtCouleur de police blanche&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gtth[background]&lt/td&gt
+                            &lttd&gtlinear-gradient(#777, #444)&lt/td&gt
+                            &lttd&gtBackground en dégradé&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd&gttd[border]&lt/td&gt
+                            &lttd&gt1px solid #fff&lt/td&gt
+                            &lttd&gtBordure blanche&lt/td&gt
+                          &lt/tr&gt
+                          &lttr&gt
+                            &lttd>tbody tr td:first-child[font-weight]&lt/td&gt
+                            &lttd&gtbold&lt/td&gt
+                            &lttd&gtMet en gras la première cellule de chaque ligne&lt/td&gt
+                          &lt/tr&gt
+                        &lt/tbody&gt
+                      &lt/table&gt
+                    </code>
+                </div>
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
@@ -530,8 +765,8 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
                 <button class="btn vld" type="button" name="button">Valider</button>
                 <button class="btn anl" type="button" name="button">Annuler</button>
             </div>
-            <div class="containglobalcode">
-                <div class="containerhtml">
+            <div class="containflex">
+                <div class="colnorm">
                     <h4> Le HTML</h4>
                     <code>
 &ltbutton class="btn" type="button" name="button"&gtCliquez ici&lt/button&gt
@@ -539,7 +774,7 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
 &ltbutton class="btn anl" type="button" name="button"&gtAnnuler&lt/button&gt
                     </code>
                 </div>
-                <div class="containercss">
+                <div class="colnorm">
                     <h4> Le Css </h4>
 
                     <code type="css">
@@ -576,9 +811,9 @@ La grille permet deplacer et de dimensionner facilement ses divs et ses colonnes
             <h3> Le Reset User Agent </h3>
             <!-- Add Reset User Agent -->
             <p> Le Reset User Agent permet de réinitialiser les paramètres d'affichage par défaut du navigateur que l'on ne souhaite pas conserver dans notre code </p>
-            <div class="containglobalcode">
+            <div class="containflex">
                 <!--Nom de la class a voir avec Julien -->
-                <div class="containercss">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Le Css </h4>
                     <code>
@@ -605,9 +840,9 @@ img {
             <!-- Add Helper Class -->
             <p> Les Helper Class sont des classes qui permettent d'accellerer votre vitesse de production.
                 <br>Nous en avons construit plusieurs types : Position, Display, Cacher un élément, etc etc </p>
-            <div class="containglobalcode">
+            <div class="containflex">
                 <!--Nom de la class a voir avec Julien -->
-                <div class="containerhtml">
+                <div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Les Positions et Display </h4>
                     <code>
@@ -647,9 +882,52 @@ img {
   display: flex;
   justify-content: center;
 }
+
+/*** Float ***/
+.floatr {
+  float: right;
+}
+
+.floatl {
+  float: left;
+}
+
+.floatn {
+  float: none;
+}
+
+.floatfix {
+  clear: both;
+}
             </code>
                 </div>
-                <div class="containercss">
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Propriété de Flex  </h4>
+                    <code>
+/*** Flex properties ***/
+.dflex {
+  display:flex;
+}
+
+.dflexcenter {
+  display:flex;
+  justify-content:center;
+}
+
+.dflexsp-b {
+  display:flex;
+  justify-content:space-between;
+}
+
+.dflex-a {
+  display:flex;
+  justify-content:space-around;
+}
+
+            </code>
+                </div>
+				<div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Cacher un élément  </h4>
                     <code>
@@ -671,37 +949,50 @@ img {
 .overhidden {
   overflow: hidden;
 }
-            </code>
-                </div>
-                <div class="containercss">
+				</code>
+            </div>
+                <div class="colnorm">
+                    <!--Nom de la class a voir avec Julien -->
+                    <h4> Centrer un élément  </h4>
+                    <code>
+/*** Center elements ***/
+.centerm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centert {
+  text-align:center;
+}
+				</code>
+            </div>
+			<div class="colnorm">
                     <!--Nom de la class a voir avec Julien -->
                     <h4> Divers  </h4>
                     <code>
-/*** Float ***/
-.floatr {
-  float: right;
+/*** Border Radius ***/
+.border-radius {
+  border-radius:0.4em;
 }
 
-.floatl {
-  float: left;
+/*** Defaults Colors & background ***/
+.color {
+  color: blue;
 }
 
-.floatn {
-  float: none;
-}
-
-.floatfix {
-  clear: both;
+.bg {
+  background: #dedede;
 }
             </code>
                 </div>
             </div>
         </section>
     </aside>
-    <footer>
-        <div class="dflexcenter">
-            <section>
+    <footer class="bg">
+        <div class="containflex">
+            <section id="Equipe">
                 <!-- A voir pr le contenu -->
+                <h3>Le mot de l'équipe : </h3>
                 <p>Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor - hodor. Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor hodor?! Hodor. Hodor hodor - hodor?! Hodor hodor HODOR! Hodor hodor; hodor hodor hodor hodor hodor! Hodor, hodor
                     - hodor... Hodor hodor hodor - hodor. Hodor. </p>
                 <p>Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor hodor?! Hodor! Hodor hodor, hodor hodor hodor?! Hodor, hodor, hodor. Hodor hodor; hodor hodor. Hodor hodor HODOR! Hodor hodor - hodor?! Hodor! Hodor hodor, hodor hodor, hodor. Hodor hodor;
@@ -709,18 +1000,22 @@ img {
             </section>
             <section>
                 <!-- A voir pr le contenu -->
+                <h3>ET la un petit géranium ?  </h3>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </section>
             <section id="contact">
                 <!-- A voir pr le contenu  -->
+                <h3>On reste en Contact ?  </h3>
                 <p> Une Envie ? Une Suggestion ?</p>
                 <p> Contactez nous ! </p>
-                <form>
-                    <input class="input" type:email>
+                <form class="dflexcenter">
+                    <input class="input" type:email placeholder="votre nom">
+                    <input class="input " type:email placeholder="votre email">
+                    <input class="input" type:email placeholder="votre site web">
                 </form>
         </div>
-        <p> &copy 2016 Copyright Julien - Valentin - Ryhad - Laurene - Eleves de SIMPLonMars</p>
+        <p> &copy 2016 Copyright Julien - Valentin - Ryhad - Elise - Laurene - Eleves de SIMPLonMars</p>
         <a href="#" id="gotop">
             <span class="icon-up-open" aria-hidden="true"></span>
             <span class="visuallyhidden">Haut de Page</span>
